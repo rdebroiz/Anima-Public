@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['similaritydefinition',['SimilarityDefinition',['../classanima_1_1AnatomicalBlockMatcher.html#af9cef30aa1165668245abb9ff3069990',1,'anima::AnatomicalBlockMatcher::SimilarityDefinition()'],['../classanima_1_1DistortionCorrectionBlockMatcher.html#a83f6817d77130055bd3ee9831e0ca9e9',1,'anima::DistortionCorrectionBlockMatcher::SimilarityDefinition()'],['../classanima_1_1TensorBlockMatcher.html#a35ae967bc2bbccfe1f0e8c0024e1b323',1,'anima::TensorBlockMatcher::SimilarityDefinition()']]],
+  ['symmetrytype',['SymmetryType',['../animaPyramidalDenseSVFMatchingBridge_8h.html#aa481657d3c33ac77e7b7a1cebbdd6fe4',1,'SymmetryType():&#160;animaPyramidalDenseSVFMatchingBridge.h'],['../animaPyramidalBlockMatchingBridge_8h.html#aa481657d3c33ac77e7b7a1cebbdd6fe4',1,'SymmetryType():&#160;animaPyramidalBlockMatchingBridge.h'],['../animaPyramidalDenseTensorSVFMatchingBridge_8h.html#aa481657d3c33ac77e7b7a1cebbdd6fe4',1,'SymmetryType():&#160;animaPyramidalDenseTensorSVFMatchingBridge.h']]]
+];
