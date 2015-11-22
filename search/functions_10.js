@@ -10,7 +10,7 @@ var searchData=
   ['reallocate_5fnodes',['reallocate_nodes',['../classanima_1_1Graph.html#a835631ff3e7748d130fa03eb378386a1',1,'anima::Graph']]],
   ['recomposetensor',['RecomposeTensor',['../namespaceanima.html#ad9855e18846dcc42ff426c7e75f77555',1,'anima']]],
   ['recursivelineyvvgaussianimagefilter',['RecursiveLineYvvGaussianImageFilter',['../classanima_1_1RecursiveLineYvvGaussianImageFilter.html#a8eb3bdd3a8159c7866fc7404701c8323',1,'anima::RecursiveLineYvvGaussianImageFilter']]],
-  ['regionblockgenerator',['RegionBlockGenerator',['../classanima_1_1BlockMatchingInitializer.html#a95e3b015859a5cf069077c26066a734f',1,'anima::BlockMatchingInitializer']]],
+  ['regionblockgenerator',['RegionBlockGenerator',['../classanima_1_1BlockMatchingInitializer.html#a52e2c10c5bef8492d50a07b2b20452ca',1,'anima::BlockMatchingInitializer']]],
   ['regionmedianvalue',['regionMedianValue',['../classanima_1_1HierarchicalInitializer.html#a2b1f6f1eaa479742c7f4acb241aa6197',1,'anima::HierarchicalInitializer']]],
   ['remove_5ffrom_5fchanged_5flist',['remove_from_changed_list',['../classanima_1_1Graph.html#a74e24d3b2cec1380219be197a9f5eadc',1,'anima::Graph']]],
   ['removetouchingborderfilter',['RemoveTouchingBorderFilter',['../classanima_1_1RemoveTouchingBorderFilter.html#aff2cd874e58b87ff1bc6c830396c3dbd',1,'anima::RemoveTouchingBorderFilter']]],

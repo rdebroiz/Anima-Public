@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_c0a452dd14f65e258448c664525add5d.html">Anima-pub-src</a></li><li class="navelem"><a class="el" href="dir_9421c4146b03c44e6336f18fe8a53217.html">Anima</a></li><li class="navelem"><a class="el" href="dir_c792feba0dce4fca5848f9cec2438d2f.html">registration</a></li><li class="navelem"><a class="el" href="dir_4555c12f868e2db364bfa324bbb8a1dc.html">anatomical-commands</a></li><li class="navelem"><a class="el" href="dir_dcb8712bd43767c6e86b13b5064f4eea.html">pyramidal_bm_registration</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_83193e57fe923362c47cf9688424d9aa.html">Anima</a></li><li class="navelem"><a class="el" href="dir_15cb7d15c015fb038ac74d52b3723b6b.html">registration</a></li><li class="navelem"><a class="el" href="dir_4f9b2f3a42b4b440d1f17d4d66b11714.html">anatomical-commands</a></li><li class="navelem"><a class="el" href="dir_9a3f2a19988a3284c1d003181d98c6a1.html">pyramidal_bm_registration</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -582,69 +582,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    m_ReferencePyramid-&gt;SetInput(m_ReferenceImage);</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    m_ReferencePyramid-&gt;SetNumberOfLevels(GetNumberOfPyramidLevels());</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    m_ReferencePyramid-&gt;SetNumberOfThreads(GetNumberOfThreads());</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    m_ReferencePyramid-&gt;Update();</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <a class="code" href="classanima_1_1PyramidalBlockMatchingBridge.html#ace52b5796b8657744612d3a0aaadab87">InputImagePointer</a> initialFloatingImage = const_cast &lt;InputImageType *&gt; (m_FloatingImage.GetPointer());</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="comment">// Compute initial transform if needed to get a decent initial floating image</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keywordflow">if</span> (!m_InitialTransform.IsNull())</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    {</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="keyword">typename</span> ResampleFilterType::Pointer tmpResample = ResampleFilterType::New();</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        tmpResample-&gt;SetTransform(m_InitialTransform);</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        tmpResample-&gt;SetInput(m_FloatingImage);</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        tmpResample-&gt;SetSize(m_ReferenceImage-&gt;GetLargestPossibleRegion().GetSize());</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        tmpResample-&gt;SetOutputOrigin(m_ReferenceImage-&gt;GetOrigin());</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        tmpResample-&gt;SetOutputSpacing(m_ReferenceImage-&gt;GetSpacing());</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        tmpResample-&gt;SetOutputDirection(m_ReferenceImage-&gt;GetDirection());</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        tmpResample-&gt;SetDefaultPixelValue(0);</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        tmpResample-&gt;Update();</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        initialFloatingImage = tmpResample-&gt;GetOutput();</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        initialFloatingImage-&gt;DisconnectPipeline();</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    }</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    {</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        m_InitialTransform = NULL;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        m_InitialTransform = AffineTransformType::New();</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        m_InitialTransform-&gt;SetIdentity();</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="keyword">typename</span> ResampleFilterType::Pointer refResampler = ResampleFilterType::New();</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    m_ReferencePyramid-&gt;SetImageResampler(refResampler);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    m_ReferencePyramid-&gt;Update();</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <a class="code" href="classanima_1_1PyramidalBlockMatchingBridge.html#ace52b5796b8657744612d3a0aaadab87">InputImagePointer</a> initialFloatingImage = const_cast &lt;InputImageType *&gt; (m_FloatingImage.GetPointer());</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="comment">// Compute initial transform if needed to get a decent initial floating image</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keywordflow">if</span> (!m_InitialTransform.IsNull())</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    {</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <span class="keyword">typename</span> ResampleFilterType::Pointer tmpResample = ResampleFilterType::New();</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        tmpResample-&gt;SetTransform(m_InitialTransform);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        tmpResample-&gt;SetInput(m_FloatingImage);</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        tmpResample-&gt;SetSize(m_ReferenceImage-&gt;GetLargestPossibleRegion().GetSize());</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        tmpResample-&gt;SetOutputOrigin(m_ReferenceImage-&gt;GetOrigin());</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        tmpResample-&gt;SetOutputSpacing(m_ReferenceImage-&gt;GetSpacing());</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        tmpResample-&gt;SetOutputDirection(m_ReferenceImage-&gt;GetDirection());</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        tmpResample-&gt;SetDefaultPixelValue(0);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        tmpResample-&gt;Update();</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        initialFloatingImage = tmpResample-&gt;GetOutput();</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        initialFloatingImage-&gt;DisconnectPipeline();</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    }</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    {</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        m_InitialTransform = NULL;</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        <span class="keywordflow">if</span> (m_InitializeOnCenterOfGravity)</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        {</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;            <span class="keyword">typename</span> TransformInitializerType::Pointer initializer = TransformInitializerType::New();</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            initializer-&gt;SetTransform(m_InitialTransform);</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            initializer-&gt;SetFixedImage(m_ReferenceImage);</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            initializer-&gt;SetMovingImage(m_FloatingImage);</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            initializer-&gt;MomentsOn();</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            initializer-&gt;InitializeTransform();</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        }</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        <span class="keyword">typename</span> ResampleFilterType::Pointer tmpResample = ResampleFilterType::New();</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        tmpResample-&gt;SetTransform(m_InitialTransform);</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        tmpResample-&gt;SetInput(m_FloatingImage);</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        tmpResample-&gt;SetSize(m_ReferenceImage-&gt;GetLargestPossibleRegion().GetSize());</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        tmpResample-&gt;SetOutputOrigin(m_ReferenceImage-&gt;GetOrigin());</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        tmpResample-&gt;SetOutputSpacing(m_ReferenceImage-&gt;GetSpacing());</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        tmpResample-&gt;SetOutputDirection(m_ReferenceImage-&gt;GetDirection());</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        tmpResample-&gt;SetDefaultPixelValue(0);</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        tmpResample-&gt;Update();</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        initialFloatingImage = tmpResample-&gt;GetOutput();</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        initialFloatingImage-&gt;DisconnectPipeline();</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    }</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="comment">// Create pyramid for floating image</span></div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    m_FloatingPyramid = PyramidType::New();</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        m_InitialTransform = AffineTransformType::New();</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        m_InitialTransform-&gt;SetIdentity();</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="keywordflow">if</span> (m_InitializeOnCenterOfGravity)</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        {</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            <span class="keyword">typename</span> TransformInitializerType::Pointer initializer = TransformInitializerType::New();</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            initializer-&gt;SetTransform(m_InitialTransform);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            initializer-&gt;SetFixedImage(m_ReferenceImage);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;            initializer-&gt;SetMovingImage(m_FloatingImage);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;            initializer-&gt;MomentsOn();</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;            initializer-&gt;InitializeTransform();</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        }</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        <span class="keyword">typename</span> ResampleFilterType::Pointer tmpResample = ResampleFilterType::New();</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        tmpResample-&gt;SetTransform(m_InitialTransform);</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        tmpResample-&gt;SetInput(m_FloatingImage);</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        tmpResample-&gt;SetSize(m_ReferenceImage-&gt;GetLargestPossibleRegion().GetSize());</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        tmpResample-&gt;SetOutputOrigin(m_ReferenceImage-&gt;GetOrigin());</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        tmpResample-&gt;SetOutputSpacing(m_ReferenceImage-&gt;GetSpacing());</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        tmpResample-&gt;SetOutputDirection(m_ReferenceImage-&gt;GetDirection());</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        tmpResample-&gt;SetDefaultPixelValue(0);</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        tmpResample-&gt;Update();</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        initialFloatingImage = tmpResample-&gt;GetOutput();</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        initialFloatingImage-&gt;DisconnectPipeline();</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    }</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    m_FloatingPyramid-&gt;SetInput(initialFloatingImage);</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    m_FloatingPyramid-&gt;SetNumberOfLevels(GetNumberOfPyramidLevels());</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    m_FloatingPyramid-&gt;SetNumberOfThreads(GetNumberOfThreads());</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    m_FloatingPyramid-&gt;Update();</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;}</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;} <span class="comment">// end of namespace anima</span></div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="comment">// Create pyramid for floating image</span></div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    m_FloatingPyramid = PyramidType::New();</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    m_FloatingPyramid-&gt;SetInput(initialFloatingImage);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    m_FloatingPyramid-&gt;SetNumberOfLevels(GetNumberOfPyramidLevels());</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    m_FloatingPyramid-&gt;SetNumberOfThreads(GetNumberOfThreads());</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keyword">typename</span> ResampleFilterType::Pointer floResampler = ResampleFilterType::New();</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    m_FloatingPyramid-&gt;SetImageResampler(floResampler);</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    m_FloatingPyramid-&gt;Update();</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;}</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;} <span class="comment">// end of namespace anima</span></div>
 <div class="ttc" id="classanima_1_1MEstTransformAgregator_html_abf7a0f623274d8a3bb87ff8b4bee5919"><div class="ttname"><a href="classanima_1_1MEstTransformAgregator.html#abf7a0f623274d8a3bb87ff8b4bee5919">anima::MEstTransformAgregator::SetMEstimateFactor</a></div><div class="ttdeci">void SetMEstimateFactor(double mestFactor)</div><div class="ttdef"><b>Definition:</b> <a href="animaMEstTransformAgregator_8h_source.html#l00026">animaMEstTransformAgregator.h:26</a></div></div>
 <div class="ttc" id="animaPyramidalDistortionCorrectionBlockMatchingBridge_8h_html_abf74dfd688b4203cefa6d49f8d14403ea34d0355cbc3f3af36b0eb3e1c9861ee9"><div class="ttname"><a href="animaPyramidalDistortionCorrectionBlockMatchingBridge_8h.html#abf74dfd688b4203cefa6d49f8d14403ea34d0355cbc3f3af36b0eb3e1c9861ee9">MeanSquares</a></div><div class="ttdef"><b>Definition:</b> <a href="animaPyramidalDistortionCorrectionBlockMatchingBridge_8h_source.html#l00014">animaPyramidalDistortionCorrectionBlockMatchingBridge.h:14</a></div></div>
 <div class="ttc" id="animaPyramidalDenseSVFMatchingBridge_8h_html_aa481657d3c33ac77e7b7a1cebbdd6fe4afc33eeb7ad64405749e928ac6f3caa3e"><div class="ttname"><a href="animaPyramidalDenseSVFMatchingBridge_8h.html#aa481657d3c33ac77e7b7a1cebbdd6fe4afc33eeb7ad64405749e928ac6f3caa3e">Kissing</a></div><div class="ttdef"><b>Definition:</b> <a href="animaPyramidalDenseSVFMatchingBridge_8h_source.html#l00015">animaPyramidalDenseSVFMatchingBridge.h:15</a></div></div>
@@ -677,7 +684,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="animaPyramidalBlockMatchingBridge_8h_html_a5d3c195f4e997200dff81f2fe23a4c9dacacc5be796c12a9aaa11908c60ae8c6d"><div class="ttname"><a href="animaPyramidalBlockMatchingBridge_8h.html#a5d3c195f4e997200dff81f2fe23a4c9dacacc5be796c12a9aaa11908c60ae8c6d">outTranslation</a></div><div class="ttdef"><b>Definition:</b> <a href="animaPyramidalBlockMatchingBridge_8h_source.html#l00048">animaPyramidalBlockMatchingBridge.h:48</a></div></div>
 <div class="ttc" id="animaPyramidalDenseSVFMatchingBridge_8h_html_aa1cc1190aa1b958d686d46e0860bc836ac0984f0c0fc7cdcea1c0bde170f9c925"><div class="ttname"><a href="animaPyramidalDenseSVFMatchingBridge_8h.html#aa1cc1190aa1b958d686d46e0860bc836ac0984f0c0fc7cdcea1c0bde170f9c925">Affine</a></div><div class="ttdef"><b>Definition:</b> <a href="animaPyramidalDenseSVFMatchingBridge_8h_source.html#l00022">animaPyramidalDenseSVFMatchingBridge.h:22</a></div></div>
 <div class="ttc" id="classanima_1_1PyramidalBlockMatchingBridge_html_a1713923bb2c4cae0e6ccdb5495d3bbb0"><div class="ttname"><a href="classanima_1_1PyramidalBlockMatchingBridge.html#a1713923bb2c4cae0e6ccdb5495d3bbb0">anima::PyramidalBlockMatchingBridge::InputImageType</a></div><div class="ttdeci">itk::Image&lt; float, ImageDimension &gt; InputImageType</div><div class="ttdef"><b>Definition:</b> <a href="animaPyramidalBlockMatchingBridge_8h_source.html#l00059">animaPyramidalBlockMatchingBridge.h:59</a></div></div>
-<div class="ttc" id="classanima_1_1BaseBlockMatcher_html_a84d6467b40b54882cfd4c8beb0c7bbb3"><div class="ttname"><a href="classanima_1_1BaseBlockMatcher.html#a84d6467b40b54882cfd4c8beb0c7bbb3">anima::BaseBlockMatcher::SetBlockPercentageKept</a></div><div class="ttdeci">void SetBlockPercentageKept(double val)</div><div class="ttdef"><b>Definition:</b> <a href="animaBaseBlockMatcher_8h_source.html#l00054">animaBaseBlockMatcher.h:54</a></div></div>
+<div class="ttc" id="classanima_1_1BaseBlockMatcher_html_a84d6467b40b54882cfd4c8beb0c7bbb3"><div class="ttname"><a href="classanima_1_1BaseBlockMatcher.html#a84d6467b40b54882cfd4c8beb0c7bbb3">anima::BaseBlockMatcher::SetBlockPercentageKept</a></div><div class="ttdeci">void SetBlockPercentageKept(double val)</div><div class="ttdef"><b>Definition:</b> <a href="animaBaseBlockMatcher_8h_source.html#l00055">animaBaseBlockMatcher.h:55</a></div></div>
 <div class="ttc" id="animaPyramidalDistortionCorrectionBlockMatchingBridge_8h_html_abf74dfd688b4203cefa6d49f8d14403eacd7d443ade48c2da7f72e90eb7cf352f"><div class="ttname"><a href="animaPyramidalDistortionCorrectionBlockMatchingBridge_8h.html#abf74dfd688b4203cefa6d49f8d14403eacd7d443ade48c2da7f72e90eb7cf352f">Correlation</a></div><div class="ttdef"><b>Definition:</b> <a href="animaPyramidalDistortionCorrectionBlockMatchingBridge_8h_source.html#l00012">animaPyramidalDistortionCorrectionBlockMatchingBridge.h:12</a></div></div>
 <div class="ttc" id="animaPyramidalDenseSVFMatchingBridge_8h_html_a0ee9c402d8d6f00739696465daa4822da320d3dc8311ac24fa27e5f31ec3e6539"><div class="ttname"><a href="animaPyramidalDenseSVFMatchingBridge_8h.html#a0ee9c402d8d6f00739696465daa4822da320d3dc8311ac24fa27e5f31ec3e6539">Bobyqa</a></div><div class="ttdef"><b>Definition:</b> <a href="animaPyramidalDenseSVFMatchingBridge_8h_source.html#l00035">animaPyramidalDenseSVFMatchingBridge.h:35</a></div></div>
 <div class="ttc" id="animaPyramidalDenseSVFMatchingBridge_8h_html_aa481657d3c33ac77e7b7a1cebbdd6fe4a33e94d2249181e0e1f815e7c0affc69b"><div class="ttname"><a href="animaPyramidalDenseSVFMatchingBridge_8h.html#aa481657d3c33ac77e7b7a1cebbdd6fe4a33e94d2249181e0e1f815e7c0affc69b">Symmetric</a></div><div class="ttdef"><b>Definition:</b> <a href="animaPyramidalDenseSVFMatchingBridge_8h_source.html#l00014">animaPyramidalDenseSVFMatchingBridge.h:14</a></div></div>
@@ -700,7 +707,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 28 2015 15:08:12 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 22 2015 20:39:06 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

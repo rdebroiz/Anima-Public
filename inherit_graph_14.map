@@ -22,7 +22,7 @@
 <area shape="rect" id="node25" href="$classanima_1_1NonLocalMeansTemporalImageFilter.html" title="anima::NonLocalMeansTemporal\lImageFilter\&lt; TInputImage \&gt;" alt="" coords="233,1338,442,1379"/>
 <area shape="rect" id="node26" href="$classanima_1_1ODFEstimatorImageFilter.html" title="anima::ODFEstimatorImage\lFilter\&lt; TInputPixelType,\l TOutputPixelType \&gt;" alt="" coords="247,1403,427,1459"/>
 <area shape="rect" id="node27" href="$classanima_1_1OrientedModelBaseResampleImageFilter.html" title="anima::OrientedModelBase\lResampleImageFilter\&lt; TInputScalar\lType, Dimension, TInterpolatorPrecisionType \&gt;" alt="" coords="193,1483,482,1539"/>
-<area shape="rect" id="node30" href="$classanima_1_1PyramidImageFilter.html" title="anima::PyramidImageFilter\l\&lt; TInputImage, TOutputImage \&gt;" alt="" coords="234,1562,441,1603"/>
+<area shape="rect" id="node30" href="$classanima_1_1PyramidImageFilter.html" title="Computes a pyramid of images using the provided resampler to perform resampling. " alt="" coords="234,1562,441,1603"/>
 <area shape="rect" id="node31" href="$classanima_1_1RemoveTouchingBorderFilter.html" title="Class selecting the connected components touching a given mask border. In MRI, external CSF may conta..." alt="" coords="232,1627,443,1669"/>
 <area shape="rect" id="node32" href="$classanima_1_1ResampleImageFilter.html" title="anima::ResampleImageFilter\l\&lt; TInputImage, TOutputImage,\l TInterpolatorPrecisionType \&gt;" alt="" coords="237,1692,437,1748"/>
 <area shape="rect" id="node33" href="$classanima_1_1SimuBlochCoherentGRE.html" title="anima::SimuBlochCoherent\lGRE\&lt; TImage \&gt;" alt="" coords="248,1771,427,1813"/>

@@ -267,11 +267,17 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html">NLMeansPatientToGroupComparisonImageFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NLMeansVectorPatchSearcher.html">NLMeansVectorPatchSearcher</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NonCentralChiNoiseGeneratorImageFilter.html">NonCentralChiNoiseGeneratorImageFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NonLocalMeansImageFilter.html">NonLocalMeansImageFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NonLocalMeansPatchSearcher.html">NonLocalMeansPatchSearcher</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NonLocalMeansTemporalImageFilter.html">NonLocalMeansTemporalImageFilter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NonLocalPatchBaseSearcher.html">NonLocalPatchBaseSearcher</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html">ODFEstimatorImageFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,6 +309,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1PyramidalSymmetryConstrainedRegistrationBridge.html">PyramidalSymmetryConstrainedRegistrationBridge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1PyramidImageFilter.html">PyramidImageFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a pyramid of images using the provided resampler to perform resampling.  <a href="classanima_1_1PyramidImageFilter.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1RandomInitializer.html">RandomInitializer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class initializing ramdomly a gaussian model.  <a href="classanima_1_1RandomInitializer.html#details">More...</a><br/></td></tr>
@@ -379,22 +386,22 @@ Functions</h2></td></tr>
 <tr class="separator:a9ff04ca634c401501fb0edc345a6d31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92423baa1c21297b3c178acd9b836ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a92423baa1c21297b3c178acd9b836ea8">BHCorrection</a> (std::vector&lt; double &gt; &amp;pvalues, double qValue)</td></tr>
 <tr class="separator:a92423baa1c21297b3c178acd9b836ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae431bd39edc419b04e3639826516e0d6"><td class="memTemplParams" colspan="2">template&lt;class ScalarType , unsigned int NDimensions&gt; </td></tr>
-<tr class="memitem:ae431bd39edc419b04e3639826516e0d6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#ae431bd39edc419b04e3639826516e0d6">composeDistortionCorrections</a> (typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;baseTrsf, typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;positiveAddOn, typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;negativeAddOn, unsigned int numThreads)</td></tr>
-<tr class="separator:ae431bd39edc419b04e3639826516e0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4793ea3b2bba15c52366d7cb4dbbf227"><td class="memTemplParams" colspan="2">template&lt;class ScalarType , unsigned int NDimensions&gt; </td></tr>
-<tr class="memitem:a4793ea3b2bba15c52366d7cb4dbbf227"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a4793ea3b2bba15c52366d7cb4dbbf227">composeSVF</a> (itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *baseTrsf, itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *addonTrsf)</td></tr>
-<tr class="separator:a4793ea3b2bba15c52366d7cb4dbbf227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ead5ac7f2df4ae2f1e005fa0588e9c0"><td class="memTemplParams" colspan="2">template&lt;class ScalarType , unsigned int NDimensions&gt; </td></tr>
+<tr class="memitem:a5ead5ac7f2df4ae2f1e005fa0588e9c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a5ead5ac7f2df4ae2f1e005fa0588e9c0">composeDistortionCorrections</a> (typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;baseTrsf, typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;positiveAddOn, typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;negativeAddOn, unsigned int numThreads=itk::MultiThreader::GetGlobalDefaultNumberOfThreads())</td></tr>
+<tr class="separator:a5ead5ac7f2df4ae2f1e005fa0588e9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c037415e4ccbab2be239b5457c6db83"><td class="memTemplParams" colspan="2">template&lt;class ScalarType , unsigned int NDimensions&gt; </td></tr>
+<tr class="memitem:a3c037415e4ccbab2be239b5457c6db83"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a3c037415e4ccbab2be239b5457c6db83">composeSVF</a> (itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *baseTrsf, itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *addonTrsf, unsigned int numThreads=itk::MultiThreader::GetGlobalDefaultNumberOfThreads())</td></tr>
+<tr class="separator:a3c037415e4ccbab2be239b5457c6db83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43838be2d79eee59b50768dc6b3ea58e"><td class="memTemplParams" colspan="2">template&lt;class TInput , class TScalarType , unsigned int NDimensions&gt; </td></tr>
 <tr class="memitem:a43838be2d79eee59b50768dc6b3ea58e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a43838be2d79eee59b50768dc6b3ea58e">computeAffineLSWFromTranslations</a> (std::vector&lt; itk::Point&lt; TInput, NDimensions &gt; &gt; &amp;inputOrigins, std::vector&lt; itk::Point&lt; TInput, NDimensions &gt; &gt; &amp;inputTransformed, std::vector&lt; TInput &gt; &amp;weights, typename itk::AffineTransform&lt; TScalarType, NDimensions &gt;::Pointer &amp;resultTransform)</td></tr>
 <tr class="separator:a43838be2d79eee59b50768dc6b3ea58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27b9fbdb7fea6e2eb3ae248e5fa575f7"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 &gt; </td></tr>
 <tr class="memitem:a27b9fbdb7fea6e2eb3ae248e5fa575f7"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a27b9fbdb7fea6e2eb3ae248e5fa575f7">ComputeAngle</a> (const std::vector&lt; T1 &gt; &amp;v1, const std::vector&lt; T2 &gt; &amp;v2)</td></tr>
 <tr class="separator:a27b9fbdb7fea6e2eb3ae248e5fa575f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae93e9b4aecc685dd0ffa4c5e670a1e9d"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , unsigned int Dimension&gt; </td></tr>
-<tr class="memitem:ae93e9b4aecc685dd0ffa4c5e670a1e9d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#ae93e9b4aecc685dd0ffa4c5e670a1e9d">computeAverageLocalCovariance</a> (vnl_matrix&lt; T2 &gt; &amp;resVariance, const itk::VectorImage&lt; T1, Dimension &gt; *inputImage, itk::Image&lt; unsigned char, Dimension &gt; *maskImage, const itk::ImageRegion&lt; Dimension &gt; &amp;averagingRegion, int localNeighborhood)</td></tr>
-<tr class="memdesc:ae93e9b4aecc685dd0ffa4c5e670a1e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Noise estimation for a patch of a vector image.  <a href="#ae93e9b4aecc685dd0ffa4c5e670a1e9d">More...</a><br/></td></tr>
-<tr class="separator:ae93e9b4aecc685dd0ffa4c5e670a1e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb84ad2a3e60a75fd280d47fe69b3f22"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , unsigned int Dimension&gt; </td></tr>
+<tr class="memitem:afb84ad2a3e60a75fd280d47fe69b3f22"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#afb84ad2a3e60a75fd280d47fe69b3f22">computeAverageLocalCovariance</a> (vnl_matrix&lt; T2 &gt; &amp;resVariance, itk::VectorImage&lt; T1, Dimension &gt; *inputImage, itk::Image&lt; unsigned char, Dimension &gt; *maskImage, const itk::ImageRegion&lt; Dimension &gt; &amp;averagingRegion, int localNeighborhood)</td></tr>
+<tr class="memdesc:afb84ad2a3e60a75fd280d47fe69b3f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Noise estimation for a patch of a vector image.  <a href="#afb84ad2a3e60a75fd280d47fe69b3f22">More...</a><br/></td></tr>
+<tr class="separator:afb84ad2a3e60a75fd280d47fe69b3f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0b6729b87f851b1d12ef924c87832fc"><td class="memTemplParams" colspan="2">template&lt;class VectorType &gt; </td></tr>
 <tr class="memitem:ac0b6729b87f851b1d12ef924c87832fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#ac0b6729b87f851b1d12ef924c87832fc">ComputeCrossProduct</a> (const VectorType &amp;v1, const VectorType &amp;v2, const unsigned int NDimension, VectorType &amp;resVec)</td></tr>
 <tr class="separator:ac0b6729b87f851b1d12ef924c87832fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -962,7 +969,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae431bd39edc419b04e3639826516e0d6"></a>
+<a class="anchor" id="a5ead5ac7f2df4ae2f1e005fa0588e9c0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -990,7 +997,7 @@ template&lt;class ScalarType , unsigned int NDimensions&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>numThreads</em>&#160;</td>
+          <td class="paramname"><em>numThreads</em> = <code>itk::MultiThreader::GetGlobalDefaultNumberOfThreads()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1001,11 +1008,11 @@ template&lt;class ScalarType , unsigned int NDimensions&gt; </div>
 </div><div class="memdoc">
 <p>Compose distortion correction opposite updates, ensures opposite symmetry baseTrsf is replaced by the result ! </p>
 
-<p>Definition at line <a class="el" href="animaVelocityUtils_8hxx_source.html#l00060">60</a> of file <a class="el" href="animaVelocityUtils_8hxx_source.html">animaVelocityUtils.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaVelocityUtils_8hxx_source.html#l00064">64</a> of file <a class="el" href="animaVelocityUtils_8hxx_source.html">animaVelocityUtils.hxx</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4793ea3b2bba15c52366d7cb4dbbf227"></a>
+<a class="anchor" id="a3c037415e4ccbab2be239b5457c6db83"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1021,7 +1028,13 @@ template&lt;class ScalarType , unsigned int NDimensions&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *&#160;</td>
-          <td class="paramname"><em>addonTrsf</em>&#160;</td>
+          <td class="paramname"><em>addonTrsf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>numThreads</em> = <code>itk::MultiThreader::GetGlobalDefaultNumberOfThreads()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1033,7 +1046,7 @@ template&lt;class ScalarType , unsigned int NDimensions&gt; </div>
 
 <p>Definition at line <a class="el" href="animaVelocityUtils_8hxx_source.html#l00013">13</a> of file <a class="el" href="animaVelocityUtils_8hxx_source.html">animaVelocityUtils.hxx</a>.</p>
 
-<p>Referenced by <a class="el" href="animaBaseBMRegistrationMethod_8hxx_source.html#l00266">anima::BaseBMRegistrationMethod&lt; TInputImageType &gt;::ComposeAddOnWithTransform()</a>.</p>
+<p>Referenced by <a class="el" href="animaBaseBMRegistrationMethod_8hxx_source.html#l00268">anima::BaseBMRegistrationMethod&lt; TInputImageType &gt;::ComposeAddOnWithTransform()</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1124,7 @@ template&lt;class T1 , class T2 &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae93e9b4aecc685dd0ffa4c5e670a1e9d"></a>
+<a class="anchor" id="afb84ad2a3e60a75fd280d47fe69b3f22"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1126,7 +1139,7 @@ template&lt;class T1 , class T2 , unsigned int Dimension&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const itk::VectorImage&lt; T1, Dimension &gt; *&#160;</td>
+          <td class="paramtype">itk::VectorImage&lt; T1, Dimension &gt; *&#160;</td>
           <td class="paramname"><em>inputImage</em>, </td>
         </tr>
         <tr>
@@ -1157,9 +1170,9 @@ template&lt;class T1 , class T2 , unsigned int Dimension&gt; </div>
 
 <p>Noise estimation for a patch of a vector image. </p>
 
-<p>Definition at line <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html#l00064">64</a> of file <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html">animaVectorImagePatchStatistics.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html#l00065">65</a> of file <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html">animaVectorImagePatchStatistics.hxx</a>.</p>
 
-<p>Referenced by <a class="el" href="animaNLMeansPatientToGroupComparisonImageFilter_8hxx_source.html#l00034">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>.</p>
+<p>Referenced by <a class="el" href="animaNLMeansVectorPatchSearcher_8hxx_source.html#l00024">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;::ComputeInputProperties()</a>.</p>
 
 </div>
 </div>
@@ -1965,9 +1978,9 @@ template&lt;class T1 , class T2 , unsigned int Dimension&gt; </div>
 
 <p>Computes the average and covariance matrix from a patch of a vector image. </p>
 
-<p>Definition at line <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html#l00010">10</a> of file <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html">animaVectorImagePatchStatistics.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html#l00011">11</a> of file <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html">animaVectorImagePatchStatistics.hxx</a>.</p>
 
-<p>Referenced by <a class="el" href="animaLocalPatchCovarianceDistanceImageFilter_8hxx_source.html#l00029">anima::LocalPatchCovarianceDistanceImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>, <a class="el" href="animaLocalPatchMeanDistanceImageFilter_8hxx_source.html#l00029">anima::LocalPatchMeanDistanceImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>, and <a class="el" href="animaNLMeansPatientToGroupComparisonImageFilter_8hxx_source.html#l00034">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>.</p>
+<p>Referenced by <a class="el" href="animaNLMeansVectorPatchSearcher_8hxx_source.html#l00062">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;::ComputeComparisonProperties()</a>, <a class="el" href="animaNLMeansVectorPatchSearcher_8hxx_source.html#l00024">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;::ComputeInputProperties()</a>, <a class="el" href="animaLocalPatchCovarianceDistanceImageFilter_8hxx_source.html#l00029">anima::LocalPatchCovarianceDistanceImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>, and <a class="el" href="animaLocalPatchMeanDistanceImageFilter_8hxx_source.html#l00029">anima::LocalPatchMeanDistanceImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>.</p>
 
 </div>
 </div>
@@ -3037,9 +3050,9 @@ template&lt;class ScalarType , unsigned int NDimensions, unsigned int NDegreesOf
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="animaBalooSVFTransformAgregator_8hxx_source.html#l00423">423</a> of file <a class="el" href="animaBalooSVFTransformAgregator_8hxx_source.html">animaBalooSVFTransformAgregator.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaBalooSVFTransformAgregator_8hxx_source.html#l00404">404</a> of file <a class="el" href="animaBalooSVFTransformAgregator_8hxx_source.html">animaBalooSVFTransformAgregator.hxx</a>.</p>
 
-<p>References <a class="el" href="animaBalooSVFTransformAgregator_8h_source.html#l00044">anima::BalooSVFTransformAgregator&lt; NDimensions &gt;::GetExtrapolationSigma()</a>, <a class="el" href="animaBaseTransformAgregator_8h_source.html#l00068">anima::BaseTransformAgregator&lt; NDimensions &gt;::GetInputRegions()</a>, <a class="el" href="animaBalooSVFTransformAgregator_8h_source.html#l00050">anima::BalooSVFTransformAgregator&lt; NDimensions &gt;::GetNumberOfThreads()</a>, <a class="el" href="animaBalooSVFTransformAgregator_8h_source.html#l00047">anima::BalooSVFTransformAgregator&lt; NDimensions &gt;::GetOutlierRejectionSigma()</a>, and <a class="el" href="animaBalooSVFTransformAgregator_8h_source.html#l00084">zeroWeight</a>.</p>
+<p>References <a class="el" href="animaBalooSVFTransformAgregator_8h_source.html#l00044">anima::BalooSVFTransformAgregator&lt; NDimensions &gt;::GetExtrapolationSigma()</a>, <a class="el" href="animaBaseTransformAgregator_8h_source.html#l00054">anima::BaseTransformAgregator&lt; NDimensions &gt;::GetInputRegions()</a>, <a class="el" href="animaBalooSVFTransformAgregator_8h_source.html#l00050">anima::BalooSVFTransformAgregator&lt; NDimensions &gt;::GetNumberOfThreads()</a>, <a class="el" href="animaBalooSVFTransformAgregator_8h_source.html#l00047">anima::BalooSVFTransformAgregator&lt; NDimensions &gt;::GetOutlierRejectionSigma()</a>, and <a class="el" href="animaBalooSVFTransformAgregator_8h_source.html#l00084">zeroWeight</a>.</p>
 
 </div>
 </div>
@@ -3519,9 +3532,9 @@ template&lt;class ScalarType , unsigned int NDimensions&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="animaVelocityUtils_8hxx_source.html#l00041">41</a> of file <a class="el" href="animaVelocityUtils_8hxx_source.html">animaVelocityUtils.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaVelocityUtils_8hxx_source.html#l00045">45</a> of file <a class="el" href="animaVelocityUtils_8hxx_source.html">animaVelocityUtils.hxx</a>.</p>
 
-<p>Referenced by <a class="el" href="animaTransformSeriesReader_8hxx_source.html#l00220">anima::TransformSeriesReader&lt; TScalarType, NDimensions &gt;::addSVFTransformation()</a>, <a class="el" href="animaDistortionCorrectionBMRegistrationMethod_8hxx_source.html#l00144">anima::DistortionCorrectionBMRegistrationMethod&lt; TInputImageType &gt;::ComposeAddOnWithTransform()</a>, <a class="el" href="animaPyramidalDenseSVFMatchingBridge_8hxx_source.html#l00445">anima::PyramidalDenseSVFMatchingBridge&lt; ImageDimension &gt;::GetOutputDisplacementFieldTransform()</a>, <a class="el" href="animaBaseBMRegistrationMethod_8hxx_source.html#l00156">anima::BaseBMRegistrationMethod&lt; TInputImageType &gt;::ResampleImages()</a>, <a class="el" href="animaPyramidalDenseSVFMatchingBridge_8hxx_source.html#l00091">anima::PyramidalDenseSVFMatchingBridge&lt; ImageDimension &gt;::Update()</a>, and <a class="el" href="animaPyramidalDenseTensorSVFMatchingBridge_8hxx_source.html#l00076">anima::PyramidalDenseTensorSVFMatchingBridge&lt; ImageDimension &gt;::Update()</a>.</p>
+<p>Referenced by <a class="el" href="animaTransformSeriesReader_8hxx_source.html#l00220">anima::TransformSeriesReader&lt; TScalarType, NDimensions &gt;::addSVFTransformation()</a>, <a class="el" href="animaDistortionCorrectionBMRegistrationMethod_8hxx_source.html#l00145">anima::DistortionCorrectionBMRegistrationMethod&lt; TInputImageType &gt;::ComposeAddOnWithTransform()</a>, <a class="el" href="animaPyramidalDenseSVFMatchingBridge_8hxx_source.html#l00445">anima::PyramidalDenseSVFMatchingBridge&lt; ImageDimension &gt;::GetOutputDisplacementFieldTransform()</a>, <a class="el" href="animaBaseBMRegistrationMethod_8hxx_source.html#l00156">anima::BaseBMRegistrationMethod&lt; TInputImageType &gt;::ResampleImages()</a>, <a class="el" href="animaPyramidalDenseSVFMatchingBridge_8hxx_source.html#l00091">anima::PyramidalDenseSVFMatchingBridge&lt; ImageDimension &gt;::Update()</a>, and <a class="el" href="animaPyramidalDenseTensorSVFMatchingBridge_8hxx_source.html#l00077">anima::PyramidalDenseTensorSVFMatchingBridge&lt; ImageDimension &gt;::Update()</a>.</p>
 
 </div>
 </div>
@@ -5705,9 +5718,9 @@ template&lt;class T &gt; </div>
 
 <p>Test if covariance matrices are different (returns distance) </p>
 
-<p>Definition at line <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html#l00146">146</a> of file <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html">animaVectorImagePatchStatistics.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html#l00147">147</a> of file <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html">animaVectorImagePatchStatistics.hxx</a>.</p>
 
-<p>Referenced by <a class="el" href="animaLocalPatchCovarianceDistanceImageFilter_8hxx_source.html#l00029">anima::LocalPatchCovarianceDistanceImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>, and <a class="el" href="animaNLMeansPatientToGroupComparisonImageFilter_8hxx_source.html#l00034">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>.</p>
+<p>Referenced by <a class="el" href="animaNLMeansVectorPatchSearcher_8hxx_source.html#l00078">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;::TestPatchConformity()</a>, and <a class="el" href="animaLocalPatchCovarianceDistanceImageFilter_8hxx_source.html#l00029">anima::LocalPatchCovarianceDistanceImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>.</p>
 
 </div>
 </div>
@@ -5763,9 +5776,9 @@ template&lt;class T &gt; </div>
 
 <p>Test if vector means are different (returns distance) </p>
 
-<p>Definition at line <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html#l00178">178</a> of file <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html">animaVectorImagePatchStatistics.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html#l00179">179</a> of file <a class="el" href="animaVectorImagePatchStatistics_8hxx_source.html">animaVectorImagePatchStatistics.hxx</a>.</p>
 
-<p>Referenced by <a class="el" href="animaLocalPatchMeanDistanceImageFilter_8hxx_source.html#l00029">anima::LocalPatchMeanDistanceImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>, and <a class="el" href="animaNLMeansPatientToGroupComparisonImageFilter_8hxx_source.html#l00034">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>.</p>
+<p>Referenced by <a class="el" href="animaNLMeansVectorPatchSearcher_8hxx_source.html#l00078">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;::TestPatchConformity()</a>, and <a class="el" href="animaLocalPatchMeanDistanceImageFilter_8hxx_source.html#l00029">anima::LocalPatchMeanDistanceImageFilter&lt; PixelScalarType &gt;::ThreadedGenerateData()</a>.</p>
 
 </div>
 </div>
@@ -5878,14 +5891,14 @@ template&lt;class T &gt; </div>
 
 <p>Definition at line <a class="el" href="animaBalooSVFTransformAgregator_8h_source.html#l00084">84</a> of file <a class="el" href="animaBalooSVFTransformAgregator_8h_source.html">animaBalooSVFTransformAgregator.h</a>.</p>
 
-<p>Referenced by <a class="el" href="animaBalooSVFTransformAgregator_8hxx_source.html#l00423">filterInputs()</a>.</p>
+<p>Referenced by <a class="el" href="animaBalooSVFTransformAgregator_8hxx_source.html#l00404">filterInputs()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 28 2015 15:08:13 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 22 2015 20:39:07 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

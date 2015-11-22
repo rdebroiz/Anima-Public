@@ -285,6 +285,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:abc3248174f6cd907f6614861a6527067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b34a798dc876fea2b576cfe78df2e46"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ResampleImageFilter.html#a4b34a798dc876fea2b576cfe78df2e46">ComputeLocalJacobianValue</a> (const <a class="el" href="classanima_1_1ResampleImageFilter.html#a461d4ae8096c313fbe6968a50171b314">InputIndexType</a> &amp;index)</td></tr>
 <tr class="separator:a4b34a798dc876fea2b576cfe78df2e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8568af957764321684127293eedc86"><td class="memItemLeft" align="right" valign="top">virtual itk::LightObject::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ResampleImageFilter.html#a1f8568af957764321684127293eedc86">InternalClone</a> () const </td></tr>
+<tr class="separator:a1f8568af957764321684127293eedc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d798da4132ed54948d9156353ea32ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ResampleImageFilter.html#a4d798da4132ed54948d9156353ea32ac">PrintSelf</a> (std::ostream &amp;os, itk::Indent indent) const </td></tr>
 <tr class="separator:a4d798da4132ed54948d9156353ea32ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff53b662ca63c51001d601ba0acc110f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ResampleImageFilter.html#aff53b662ca63c51001d601ba0acc110f">ResampleImageFilter</a> ()</td></tr>
@@ -810,7 +812,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 <p>This method is used to set the state of the filter after multi-threading.</p>
 <p>Set up state of filter after multi-threading. </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00140">140</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00156">156</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -840,7 +842,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 <p>This method is used to set the state of the filter before multi-threading.</p>
 <p>Set up state of filter before multi-threading. InterpolatorType::SetInputImage is not thread-safe and hence has to be set up before ThreadedGenerateData </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00117">117</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00133">133</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -867,7 +869,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00400">400</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00416">416</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -895,7 +897,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00419">419</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00435">435</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -945,7 +947,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 <p>Inform pipeline of necessary input image region</p>
 <p>Determining the actual input region is non-trivial, especially when we cannot assume anything about the transform being used. So we do the easy thing and request the entire input image. </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00251">251</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00267">267</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -976,7 +978,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 <dl class="section see"><dt>See Also</dt><dd>ProcessObject::GenerateOutputInformaton()</dd></dl>
 <p>Inform pipeline of required output region </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00325">325</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00341">341</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +1052,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 <p>Method Compute the Modified Time based on changed to the components.</p>
 <p>Verify if any of the components has been modified. </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00374">374</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00390">390</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -1200,7 +1202,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 </div><div class="memdoc">
 <p>Set the smart pointer to the reference image that will provide the grid parameters for the output image. </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00280">280</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00296">296</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -1278,6 +1280,36 @@ template&lt;class TInputImage, class TOutputImage, class TInterpolatorPrecisionT
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f8568af957764321684127293eedc86"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">itk::LightObject::Pointer <a class="el" href="classanima_1_1ResampleImageFilter.html">anima::ResampleImageFilter</a>&lt; TInputImage, TOutputImage, TInterpolatorPrecisionType &gt;::InternalClone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a class copy with important specific variables set, not the greatest implementation especially in terms of interpolators and other internal pointers copy (not done here). Use with extreme caution </p>
+
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00074">74</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+
+<p>References <a class="el" href="animaResampleImageFilter_8h_source.html#l00192">anima::ResampleImageFilter&lt; TInputImage, TOutputImage, TInterpolatorPrecisionType &gt;::SetScaleIntensitiesWithJacobian()</a>.</p>
 
 </div>
 </div>
@@ -1359,10 +1391,9 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Print out a description of self</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Add details about this class </dd></dl>
+<p>Print out a description of self </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00049">49</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00048">48</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -1499,7 +1530,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 </div><div class="memdoc">
 <p>Set the output image origin. </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00087">87</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00103">103</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -1520,7 +1551,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 </div><div class="memdoc">
 <p>Helper method to set the output parameters based on this image </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00310">310</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00326">326</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -1576,7 +1607,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 </div><div class="memdoc">
 <p>Set the output image spacing. </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00074">74</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00090">90</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -1625,7 +1656,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 <p>Copy the output information from another Image. By default, the information is specified with the SetOutputSpacing, Origin, and Direction methods. UseReferenceImage must be On and a Reference image must be present to override the defaul behavior. NOTE: This function seems redundant with the SetOutputParametersFromImage( image ) function</p>
 <p>Set the smart pointer to the reference image that will provide the grid parameters for the output image. </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00296">296</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00312">312</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -1654,6 +1685,8 @@ template&lt;class TInputImage, class TOutputImage, class TInterpolatorPrecisionT
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="animaResampleImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="animaResampleImageFilter_8h_source.html">animaResampleImageFilter.h</a>.</p>
+
+<p>Referenced by <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00074">anima::ResampleImageFilter&lt; TInputImage, TOutputImage, TInterpolatorPrecisionType &gt;::InternalClone()</a>.</p>
 
 </div>
 </div>
@@ -1701,9 +1734,9 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 </div><div class="memdoc">
 <p>Set the coordinate transformation. Set the coordinate transform to use for resampling. Note that this must be in physical coordinates and it is the output-to-input transform, NOT the input-to-output transform that you might naively expect. By default the filter uses an Identity transform. You must provide a different transform here, before attempting to run the filter, if you do not want to use the default Identity transform. </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00096">96</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00112">112</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
-<p>Referenced by <a class="el" href="animaDistortionCorrectionBMRegistrationMethod_8hxx_source.html#l00034">anima::DistortionCorrectionBMRegistrationMethod&lt; TInputImageType &gt;::ResampleImages()</a>.</p>
+<p>Referenced by <a class="el" href="animaPyramidImageFilter_8hxx_source.html#l00274">anima::PyramidImageFilter&lt; TInputImage, TOutputImage &gt;::CreateLevelImage()</a>, and <a class="el" href="animaDistortionCorrectionBMRegistrationMethod_8hxx_source.html#l00034">anima::DistortionCorrectionBMRegistrationMethod&lt; TInputImageType &gt;::ResampleImages()</a>.</p>
 
 </div>
 </div>
@@ -1768,7 +1801,7 @@ template&lt;class TInputImage , class TOutputImage , class TInterpolatorPrecisio
 </div><div class="memdoc">
 <p>ThreadedGenerateData </p>
 
-<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00153">153</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
+<p>Definition at line <a class="el" href="animaResampleImageFilter_8hxx_source.html#l00169">169</a> of file <a class="el" href="animaResampleImageFilter_8hxx_source.html">animaResampleImageFilter.hxx</a>.</p>
 
 </div>
 </div>
@@ -1879,7 +1912,7 @@ template&lt;class TInputImage, class TOutputImage, class TInterpolatorPrecisionT
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 28 2015 15:08:14 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 22 2015 20:39:08 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

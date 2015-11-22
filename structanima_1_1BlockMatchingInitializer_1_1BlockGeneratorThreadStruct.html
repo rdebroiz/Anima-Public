@@ -114,9 +114,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a3bf1803b9fde5c9a94af143684da6b44"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
+&lt; <a class="el" href="classanima_1_1BlockMatchingInitializer.html#ada25fbd69037e1a6dec66c61a71b8483">PointType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanima_1_1BlockMatchingInitializer_1_1BlockGeneratorThreadStruct.html#a3bf1803b9fde5c9a94af143684da6b44">blocks_positions</a></td></tr>
+<tr class="separator:a3bf1803b9fde5c9a94af143684da6b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d5cad2c202e1140f511da7701d79e20"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
 &lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanima_1_1BlockMatchingInitializer_1_1BlockGeneratorThreadStruct.html#a0d5cad2c202e1140f511da7701d79e20">blocks_variances</a></td></tr>
 <tr class="separator:a0d5cad2c202e1140f511da7701d79e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42d40dec4a194e847f095c8badbd7d6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanima_1_1BlockMatchingInitializer_1_1BlockGeneratorThreadStruct.html#ab42d40dec4a194e847f095c8badbd7d6">blockStartOffsets</a></td></tr>
+<tr class="separator:ab42d40dec4a194e847f095c8badbd7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae440873abffe5a655b37dea884f063da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classanima_1_1BlockMatchingInitializer.html#a677f798541928696d0e5ea52cdb7c39f">Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanima_1_1BlockMatchingInitializer_1_1BlockGeneratorThreadStruct.html#ae440873abffe5a655b37dea884f063da">Filter</a></td></tr>
 <tr class="separator:ae440873abffe5a655b37dea884f063da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a118524fb37b2d266c739365ce695e2c2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
@@ -136,8 +141,26 @@ Public Attributes</h2></td></tr>
 struct anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::BlockGeneratorThreadStruct</h3>
 
 
-<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00106">106</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
+<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00112">112</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a3bf1803b9fde5c9a94af143684da6b44"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class PixelType , unsigned int NDimensions = 3&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector &lt;<a class="el" href="classanima_1_1BlockMatchingInitializer.html#ada25fbd69037e1a6dec66c61a71b8483">PointType</a>&gt; &gt; <a class="el" href="classanima_1_1BlockMatchingInitializer.html">anima::BlockMatchingInitializer</a>&lt; PixelType, NDimensions &gt;::BlockGeneratorThreadStruct::blocks_positions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00120">120</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
+
+<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00288">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00165">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0d5cad2c202e1140f511da7701d79e20"></a>
 <div class="memitem">
 <div class="memproto">
@@ -150,9 +173,27 @@ template&lt;class PixelType , unsigned int NDimensions = 3&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00112">112</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
+<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00119">119</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00155">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00055">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
+<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00288">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00165">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab42d40dec4a194e847f095c8badbd7d6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class PixelType , unsigned int NDimensions = 3&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;unsigned int&gt; <a class="el" href="classanima_1_1BlockMatchingInitializer.html">anima::BlockMatchingInitializer</a>&lt; PixelType, NDimensions &gt;::BlockGeneratorThreadStruct::blockStartOffsets</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00116">116</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
+
+<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00288">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00165">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
 
 </div>
 </div>
@@ -168,9 +209,9 @@ template&lt;class PixelType , unsigned int NDimensions = 3&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00108">108</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
+<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00114">114</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00155">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00055">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
+<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00288">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00165">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
 
 </div>
 </div>
@@ -186,9 +227,9 @@ template&lt;class PixelType , unsigned int NDimensions = 3&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00110">110</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
+<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00117">117</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00155">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00055">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
+<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00288">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00165">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
 
 </div>
 </div>
@@ -204,9 +245,9 @@ template&lt;class PixelType , unsigned int NDimensions = 3&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00110">110</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
+<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00117">117</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00155">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00055">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
+<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00288">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00165">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
 
 </div>
 </div>
@@ -222,9 +263,9 @@ template&lt;class PixelType , unsigned int NDimensions = 3&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00109">109</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
+<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00115">115</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00155">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00055">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
+<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00288">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00165">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
 
 </div>
 </div>
@@ -240,9 +281,9 @@ template&lt;class PixelType , unsigned int NDimensions = 3&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00111">111</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
+<p>Definition at line <a class="el" href="animaBlockMatchInitializer_8h_source.html#l00118">118</a> of file <a class="el" href="animaBlockMatchInitializer_8h_source.html">animaBlockMatchInitializer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00155">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00055">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
+<p>Referenced by <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00288">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::ThreadBlockGenerator()</a>, and <a class="el" href="animaBlockMatchInitializer_8hxx_source.html#l00165">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::Update()</a>.</p>
 
 </div>
 </div>
@@ -252,7 +293,7 @@ template&lt;class PixelType , unsigned int NDimensions = 3&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 28 2015 15:08:14 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 22 2015 20:39:07 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

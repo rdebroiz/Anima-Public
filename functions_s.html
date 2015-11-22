@@ -408,7 +408,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SetBetaParameter()
 : <a class="el" href="classanima_1_1LowMemoryNLMeansPatientToGroupComparisonBridge.html#a8fa99f32a4ad9b13095e54b4998c0638">anima::LowMemoryNLMeansPatientToGroupComparisonBridge</a>
 , <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#a9ca37867a9b4b24391b0d960a0c00b26">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
+, <a class="el" href="classanima_1_1NLMeansVectorPatchSearcher.html#a734dbb2aa038e0f35e0436fabcfb88a4">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansImageFilter.html#aa5ea444e4b4132b853ad128fd877f299">anima::NonLocalMeansImageFilter&lt; TInputImage &gt;</a>
+, <a class="el" href="classanima_1_1NonLocalMeansPatchSearcher.html#a5a3cf175b7b67e9e19476d0ae0005d89">anima::NonLocalMeansPatchSearcher&lt; ImageType, DataImageType &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansTemporalImageFilter.html#a80af6ff12b5f6a571488a97bc6f4bdb5">anima::NonLocalMeansTemporalImageFilter&lt; TInputImage &gt;</a>
 </li>
 <li>SetBlockIndex()
@@ -423,9 +425,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SetBlockPercentageKept()
 : <a class="el" href="classanima_1_1BaseBlockMatcher.html#a84d6467b40b54882cfd4c8beb0c7bbb3">anima::BaseBlockMatcher&lt; TInputImageType &gt;</a>
 </li>
+<li>SetBlockPositions()
+: <a class="el" href="classanima_1_1BaseBlockMatcher.html#a9873fa5dcb74798f3534d54ea95677e5">anima::BaseBlockMatcher&lt; TInputImageType &gt;</a>
+</li>
+<li>SetBlockRegions()
+: <a class="el" href="classanima_1_1BaseBlockMatcher.html#a8dc656b3c3567b0cff2a9f5047fa7056">anima::BaseBlockMatcher&lt; TInputImageType &gt;</a>
+</li>
 <li>SetBlockSize()
 : <a class="el" href="classanima_1_1BaseBlockMatcher.html#a47b5d7ad67077e61adb4ed0117c7383a">anima::BaseBlockMatcher&lt; TInputImageType &gt;</a>
-, <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a7d981e53877158c58c5b9755b2821e05">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
+, <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a7287800a57a57cd960ffcdfbc4f46c65">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalBlockMatchingBridge.html#a72c2ad09dc97bd0791f5926bc08edba3">anima::PyramidalBlockMatchingBridge&lt; ImageDimension &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalDenseSVFMatchingBridge.html#a3674337b1da0a05329b79c79e58e42e0">anima::PyramidalDenseSVFMatchingBridge&lt; ImageDimension &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalDenseTensorSVFMatchingBridge.html#a8ba671601dcc3973f29f4dfda2661e4f">anima::PyramidalDenseTensorSVFMatchingBridge&lt; ImageDimension &gt;</a>
@@ -433,7 +441,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SetBlockSpacing()
 : <a class="el" href="classanima_1_1BaseBlockMatcher.html#a93fb02b56d23c3e372a052acfded4e52">anima::BaseBlockMatcher&lt; TInputImageType &gt;</a>
-, <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a807539269827e53b24444ea42f417c54">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
+, <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a43a6831254f8e6fb3199b3a62ef06465">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalBlockMatchingBridge.html#a653d2b9716a78a62271a8d9ba8933603">anima::PyramidalBlockMatchingBridge&lt; ImageDimension &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalDenseSVFMatchingBridge.html#a0a501f237cc77d67b0a32770f5cf1874">anima::PyramidalDenseSVFMatchingBridge&lt; ImageDimension &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalDenseTensorSVFMatchingBridge.html#a6eb4dccfcc3809bc4886df1ce5cd1a70">anima::PyramidalDenseTensorSVFMatchingBridge&lt; ImageDimension &gt;</a>
@@ -445,6 +453,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SetBlockVarianceThreshold()
 : <a class="el" href="classanima_1_1BaseBlockMatcher.html#a908f8140df4ffd3d4db0beb8c8729dc0">anima::BaseBlockMatcher&lt; TInputImageType &gt;</a>
+</li>
+<li>SetBlockWeights()
+: <a class="el" href="classanima_1_1BaseBlockMatcher.html#a1c90cf5906bcf13776f62d251c5d5d01">anima::BaseBlockMatcher&lt; TInputImageType &gt;</a>
 </li>
 <li>SetBValueBaseString()
 : <a class="el" href="classanima_1_1GradientFileReader.html#ad685a2cd1e74506d2bf9c243ce525d67">anima::GradientFileReader&lt; GradientType, BValueScalarType &gt;</a>
@@ -480,7 +491,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classanima_1_1dtiTractographyImageFilter.html#af4c1f4579fe42a4f459cc7b16c542a10">anima::dtiTractographyImageFilter</a>
 </li>
 <li>SetComputeOuterDam()
-: <a class="el" href="classanima_1_1BlockMatchingInitializer.html#af8c7753df84fc23aee4e578e8cd53446">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
+: <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a0285cfac84ad5919220aac9570ea167b">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
 </li>
 <li>SetConvergenceThreshold()
 : <a class="el" href="classanima_1_1MEstimateSVFImageFilter.html#ac26d596dcfb169a3fd906b4927eba196">anima::MEstimateSVFImageFilter&lt; TScalarType, NDegreesOfFreedom, NDimensions &gt;</a>
@@ -501,35 +512,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SetDamDistance()
 : <a class="el" href="classanima_1_1BaseBlockMatcher.html#a8f6176baf765a95df968bb178d2889be">anima::BaseBlockMatcher&lt; TInputImageType &gt;</a>
-, <a class="el" href="classanima_1_1BlockMatchingInitializer.html#ac7fa9a36731cddb6f4d47cc9a1f80cdd">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
+, <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a0741c7461df83c1ce9345d2704860351">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalDenseSVFMatchingBridge.html#ac0d655858868a2667391fae56b361a3e">anima::PyramidalDenseSVFMatchingBridge&lt; ImageDimension &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalDenseTensorSVFMatchingBridge.html#a417cb6386c57d92be58f7c53b1489a0b">anima::PyramidalDenseTensorSVFMatchingBridge&lt; ImageDimension &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalDistortionCorrectionBlockMatchingBridge.html#a70a9290b7a5b882de527de4532b09167">anima::PyramidalDistortionCorrectionBlockMatchingBridge&lt; ImageDimension &gt;</a>
 </li>
 <li>SetDamIndexes()
 : <a class="el" href="classanima_1_1BalooSVFTransformAgregator.html#a9ae94dcf7ddaa4633322a36e033d07f3">anima::BalooSVFTransformAgregator&lt; NDimensions &gt;</a>
+, <a class="el" href="classanima_1_1BaseBlockMatcher.html#a55d8791c1ae06221ba9dbcb50e8e3fa2">anima::BaseBlockMatcher&lt; TInputImageType &gt;</a>
 , <a class="el" href="classanima_1_1DenseSVFTransformAgregator.html#aeae79665c26d1078befd883686bb9e2e">anima::DenseSVFTransformAgregator&lt; NDimensions &gt;</a>
 </li>
 <li>SetDatabaseCovarianceDistanceAverage()
 : <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#a8459dc466c420ffaaef970a28702c43f">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
+, <a class="el" href="classanima_1_1NLMeansVectorPatchSearcher.html#a3a556082d4e54b77635c6ee2b844e10c">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;</a>
 </li>
 <li>SetDatabaseCovarianceDistanceAverageFileName()
 : <a class="el" href="classanima_1_1LowMemoryNLMeansPatientToGroupComparisonBridge.html#a7a4fa4a9ef12a2f2b5e7e22967019fab">anima::LowMemoryNLMeansPatientToGroupComparisonBridge</a>
 </li>
 <li>SetDatabaseCovarianceDistanceStd()
 : <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#a1c8c5629208938c5a48a18e4f280f1e1">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
+, <a class="el" href="classanima_1_1NLMeansVectorPatchSearcher.html#a69ac2d7891826b72b2d83bc109dea6a7">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;</a>
 </li>
 <li>SetDatabaseCovarianceDistanceStdFileName()
 : <a class="el" href="classanima_1_1LowMemoryNLMeansPatientToGroupComparisonBridge.html#afe71b6ab5ca0a1c412f7884c636bec30">anima::LowMemoryNLMeansPatientToGroupComparisonBridge</a>
 </li>
 <li>SetDatabaseMeanDistanceAverage()
 : <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#a50bce0357ef716a1c74a86da86e75d20">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
+, <a class="el" href="classanima_1_1NLMeansVectorPatchSearcher.html#aa2412263b48faa1c16771c1d0edd047f">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;</a>
 </li>
 <li>SetDatabaseMeanDistanceAverageFileName()
 : <a class="el" href="classanima_1_1LowMemoryNLMeansPatientToGroupComparisonBridge.html#ad06f02f079590186d7b1da53d2fed05b">anima::LowMemoryNLMeansPatientToGroupComparisonBridge</a>
 </li>
 <li>SetDatabaseMeanDistanceStd()
 : <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#a4e146a8f11c8d0cfb9e72417f4584029">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
+, <a class="el" href="classanima_1_1NLMeansVectorPatchSearcher.html#ac01c8a4f519f6711b0248617e5658b26">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;</a>
 </li>
 <li>SetDatabaseMeanDistanceStdFileName()
 : <a class="el" href="classanima_1_1LowMemoryNLMeansPatientToGroupComparisonBridge.html#ab2127b14c89a1282a3b875ff71966a0e">anima::LowMemoryNLMeansPatientToGroupComparisonBridge</a>
@@ -541,6 +557,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SetDataLTFileNames()
 : <a class="el" href="classanima_1_1LowMemoryPatientToGroupComparisonBridge.html#a01c4ea291a93709ecdaf6d82c82f6899">anima::LowMemoryPatientToGroupComparisonBridge</a>
+</li>
+<li>SetDataMask()
+: <a class="el" href="classanima_1_1NLMeansVectorPatchSearcher.html#a09dd7b68a2704a8aad79c9c8604f8330">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;</a>
 </li>
 <li>SetDataODFFileNames()
 : <a class="el" href="classanima_1_1LowMemoryPatientToGroupODFComparisonBridge.html#a583dc233778d0bf4db5246b9f49d83cd">anima::LowMemoryPatientToGroupODFComparisonBridge</a>
@@ -738,6 +757,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classanima_1_1SymmetryConstrainedTransform.html#a13e1bac8961fb168d3b7e9e186fb017b">anima::SymmetryConstrainedTransform&lt; TScalarType &gt;</a>
 , <a class="el" href="classanima_1_1SymmetryPlaneTransform.html#a43680b3e2fccb7f2643ab2a6f80764b2">anima::SymmetryPlaneTransform&lt; TScalarType &gt;</a>
 </li>
+<li>SetImageResampler()
+: <a class="el" href="classanima_1_1PyramidImageFilter.html#a4f84c65b0bd90c70f1f4b42eb010e5a6">anima::PyramidImageFilter&lt; TInputImage, TOutputImage &gt;</a>
+</li>
 <li>SetInitialAlphas()
 : <a class="el" href="classanima_1_1GaussianEMEstimator.html#a5e9deabc1e725399fafd33a2879a8965">anima::GaussianEMEstimator&lt; TInputImage, TMaskImage &gt;</a>
 </li>
@@ -801,61 +823,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SetInputImage()
 : <a class="el" href="classanima_1_1dtiTractographyImageFilter.html#a3916c94182575d6d8e3bd2ee993bd36d">anima::dtiTractographyImageFilter</a>
+, <a class="el" href="classanima_1_1Graph3DFilter.html#ad6b68c3e0af48fba91ad5031311d80af">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
+, <a class="el" href="classanima_1_1GraphCutFilter.html#a86a7eeaa6fc52f8b0c3cec106d47ec0f">anima::GraphCutFilter&lt; TInput, TOutput &gt;</a>
+, <a class="el" href="classanima_1_1NonLocalPatchBaseSearcher.html#aed687ff65253a139760e6c406264c3f7">anima::NonLocalPatchBaseSearcher&lt; ImageType &gt;</a>
 , <a class="el" href="classanima_1_1RecursiveLineYvvGaussianImageFilter.html#a99876d58f931462a7adeaf9a052efa4a">anima::RecursiveLineYvvGaussianImageFilter&lt; TInputImage, TOutputImage &gt;</a>
+, <a class="el" href="classanima_1_1TLinksFilter.html#a2a96cfdb2bcbdac19f6aaf12210b8ac9">anima::TLinksFilter&lt; TInput, TOutput &gt;</a>
 </li>
 <li>SetInputImage1()
 : <a class="el" href="classanima_1_1AtlasInitializer.html#af8efabd358a812e3dfce07ccaa77aeaf">anima::AtlasInitializer&lt; TInputImage, TMaskImage, TAtlasImage &gt;</a>
 , <a class="el" href="classanima_1_1ComputeMahalanobisImagesFilter.html#a0a734ef53d4c861a2c133303aebdd9ab">anima::ComputeMahalanobisImagesFilter&lt; TInputImage, TMaskImage, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1ComputeSolution.html#acf1f9dc6a1762d3523defba429e119fb">anima::ComputeSolution&lt; TInputImage, TMaskImage, TAtlasImage &gt;</a>
 , <a class="el" href="classanima_1_1GaussianEMEstimator.html#a6a45ab6ef3aa816eb578efa88d6e69a1">anima::GaussianEMEstimator&lt; TInputImage, TMaskImage &gt;</a>
-, <a class="el" href="classanima_1_1Graph3DFilter.html#a8729fd6e5326ae307aa34c614e19fced">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1GraphCutFilter.html#a450b1dab8cde3705bf1b5c04759f946f">anima::GraphCutFilter&lt; TInput, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1HierarchicalInitializer.html#ad265dc67af7747e9f10ad0e5b95d31cb">anima::HierarchicalInitializer&lt; TInputImage, TMaskImage &gt;</a>
 , <a class="el" href="classanima_1_1ImageClassifierFilter.html#a307181e7120d8e81d09bfd541f63d85e">anima::ImageClassifierFilter&lt; TInput, TMask, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1NLinksFilter.html#af69c71a0fd53203ccc46b5f58d8775f8">anima::NLinksFilter&lt; TInput, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1TLinksFilter.html#a7e94cda70eb28c980e122b0ba5e03c1b">anima::TLinksFilter&lt; TInput, TOutput &gt;</a>
 </li>
 <li>SetInputImage2()
 : <a class="el" href="classanima_1_1AtlasInitializer.html#afb017ac3476ceef954e675fed271a373">anima::AtlasInitializer&lt; TInputImage, TMaskImage, TAtlasImage &gt;</a>
 , <a class="el" href="classanima_1_1ComputeMahalanobisImagesFilter.html#a2cc1432c1934802b49680022ef741070">anima::ComputeMahalanobisImagesFilter&lt; TInputImage, TMaskImage, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1ComputeSolution.html#a0b50dac984d9f8a07a19c76539227033">anima::ComputeSolution&lt; TInputImage, TMaskImage, TAtlasImage &gt;</a>
 , <a class="el" href="classanima_1_1GaussianEMEstimator.html#a316d79846ec3d15199d927b95cf8d129">anima::GaussianEMEstimator&lt; TInputImage, TMaskImage &gt;</a>
-, <a class="el" href="classanima_1_1Graph3DFilter.html#a4cef22b448d499755795295da884ba21">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1GraphCutFilter.html#a2f3f06116b638f016381f46f9a3af798">anima::GraphCutFilter&lt; TInput, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1HierarchicalInitializer.html#aa3fcd9dc6a2776d6f6c557c4a4110b15">anima::HierarchicalInitializer&lt; TInputImage, TMaskImage &gt;</a>
 , <a class="el" href="classanima_1_1ImageClassifierFilter.html#ae2811ac8891b1dd016388f2a335dd97e">anima::ImageClassifierFilter&lt; TInput, TMask, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1NLinksFilter.html#afd29a5e8ca861a16472bee668e456aa4">anima::NLinksFilter&lt; TInput, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1TLinksFilter.html#aeca296ff3e7d8a38d11e7304d11418c9">anima::TLinksFilter&lt; TInput, TOutput &gt;</a>
 </li>
 <li>SetInputImage3()
 : <a class="el" href="classanima_1_1AtlasInitializer.html#a4eadf6af060a0f8749bafb1ae71b571d">anima::AtlasInitializer&lt; TInputImage, TMaskImage, TAtlasImage &gt;</a>
 , <a class="el" href="classanima_1_1ComputeMahalanobisImagesFilter.html#a2213e3bd3812dde7180dce261f6b45f4">anima::ComputeMahalanobisImagesFilter&lt; TInputImage, TMaskImage, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1ComputeSolution.html#a58ec4e5e2b7ae7a5dd7d0e2597069c4a">anima::ComputeSolution&lt; TInputImage, TMaskImage, TAtlasImage &gt;</a>
 , <a class="el" href="classanima_1_1GaussianEMEstimator.html#ad0452eb604c423fb9c51b4cd9b3319d6">anima::GaussianEMEstimator&lt; TInputImage, TMaskImage &gt;</a>
-, <a class="el" href="classanima_1_1Graph3DFilter.html#ab1925e6a1bc339df8885a54a18dd82f1">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1GraphCutFilter.html#a2d851c3bbc8881e131bea791e5a22073">anima::GraphCutFilter&lt; TInput, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1HierarchicalInitializer.html#a7c9b3a32c60a3638a5c4f172e042d03b">anima::HierarchicalInitializer&lt; TInputImage, TMaskImage &gt;</a>
 , <a class="el" href="classanima_1_1ImageClassifierFilter.html#a6d6d84b75a0c4c2d250d01a628827ed8">anima::ImageClassifierFilter&lt; TInput, TMask, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1NLinksFilter.html#a5aef07ae357cf9e6a3904b1eff4e93cb">anima::NLinksFilter&lt; TInput, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1TLinksFilter.html#a8dd28e849957a98e78086a3f10e14955">anima::TLinksFilter&lt; TInput, TOutput &gt;</a>
 </li>
 <li>SetInputImage4()
 : <a class="el" href="classanima_1_1GaussianEMEstimator.html#a80854ab7fd3be940a512ad634e525375">anima::GaussianEMEstimator&lt; TInputImage, TMaskImage &gt;</a>
-, <a class="el" href="classanima_1_1Graph3DFilter.html#aa62e45f675574b53a85fd4d46218e434">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1GraphCutFilter.html#aef0f27da9189b874aee1ad6a20501cb7">anima::GraphCutFilter&lt; TInput, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1HierarchicalInitializer.html#aca0d1df3b07621805d840e9ab49c2e5f">anima::HierarchicalInitializer&lt; TInputImage, TMaskImage &gt;</a>
 , <a class="el" href="classanima_1_1ImageClassifierFilter.html#a0c11dff5345692cc381ac2bda194ce04">anima::ImageClassifierFilter&lt; TInput, TMask, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1NLinksFilter.html#ad263b81a2b7fe9fac71e05b11598c576">anima::NLinksFilter&lt; TInput, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1TLinksFilter.html#a181e53a92df5c7ff1352c3f20cdc77d1">anima::TLinksFilter&lt; TInput, TOutput &gt;</a>
 </li>
 <li>SetInputImage5()
 : <a class="el" href="classanima_1_1GaussianEMEstimator.html#ab3e6e7c7cb753f614317f2fa06c80e61">anima::GaussianEMEstimator&lt; TInputImage, TMaskImage &gt;</a>
-, <a class="el" href="classanima_1_1Graph3DFilter.html#a1d5e5b6077e8cf4cfe76939921d6f907">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1GraphCutFilter.html#a04dda80cfff896e7e1cea95bd3216c71">anima::GraphCutFilter&lt; TInput, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1HierarchicalInitializer.html#a3ae70369f2b7efd1ea4e6b168188ad3e">anima::HierarchicalInitializer&lt; TInputImage, TMaskImage &gt;</a>
 , <a class="el" href="classanima_1_1ImageClassifierFilter.html#a3fbdd0c36d639e60590a71503ff2cd23">anima::ImageClassifierFilter&lt; TInput, TMask, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1NLinksFilter.html#a8e4a2118fec71a209a6de63871873425">anima::NLinksFilter&lt; TInput, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1TLinksFilter.html#a0a6b24d6aa34b0593d09c7e6ebacbfc5">anima::TLinksFilter&lt; TInput, TOutput &gt;</a>
 </li>
 <li>SetInputImageDP()
 : <a class="el" href="classanima_1_1GcStremMsLesionsSegmentationFilter.html#a15d1ff814a12c8a970cf864c0901942e">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;</a>
@@ -894,7 +905,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classanima_1_1BaseTransformAgregator.html#ac8aa68c8c6a7edbc07cd4bf150bf1727">anima::BaseTransformAgregator&lt; NDimensions &gt;</a>
 </li>
 <li>SetInputRegions()
-: <a class="el" href="classanima_1_1BaseTransformAgregator.html#a0792609e76714e1a299eac3af6d33183">anima::BaseTransformAgregator&lt; NDimensions &gt;</a>
+: <a class="el" href="classanima_1_1BaseTransformAgregator.html#a5e29a68809ab6b346ed794addc338c81">anima::BaseTransformAgregator&lt; NDimensions &gt;</a>
 </li>
 <li>SetInputSeedProbaSinks()
 : <a class="el" href="classanima_1_1Graph3DFilter.html#a198081c1be12e82edbedd1d90df49f1a">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
@@ -1078,6 +1089,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classanima_1_1GcStremMsLesionsSegmentationFilter.html#af1af46a56adb8ebf498e7976699a58f7">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;</a>
 , <a class="el" href="classanima_1_1GraphCutFilter.html#a056d52b5da48cb3de4dc01592d5f6e63">anima::GraphCutFilter&lt; TInput, TOutput &gt;</a>
 </li>
+<li>SetMaxAbsDisp()
+: <a class="el" href="classanima_1_1NonLocalPatchBaseSearcher.html#a4c4b0fc78ac4b798d7a22fa0179df5ad">anima::NonLocalPatchBaseSearcher&lt; ImageType &gt;</a>
+</li>
 <li>SetMaxFiberAngle()
 : <a class="el" href="classanima_1_1dtiTractographyImageFilter.html#a7192a0d8c45610c0dd6b206251b2f23e">anima::dtiTractographyImageFilter</a>
 </li>
@@ -1117,13 +1131,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SetMaxValues()
 : <a class="el" href="classanima_1_1RandomInitializer.html#aa74d9079ceb2c77b6c2268e0e6ab58a7">anima::RandomInitializer</a>
 </li>
+<li>SetMeanImage()
+: <a class="el" href="classanima_1_1NonLocalMeansPatchSearcher.html#aa0d8a8f090b042307d8559e4106c8ef2">anima::NonLocalMeansPatchSearcher&lt; ImageType, DataImageType &gt;</a>
+</li>
 <li>SetMeanMinThreshold()
 : <a class="el" href="classanima_1_1NonLocalMeansImageFilter.html#accc1134e1fa1a5aa8f6818d4868286fa">anima::NonLocalMeansImageFilter&lt; TInputImage &gt;</a>
+, <a class="el" href="classanima_1_1NonLocalMeansPatchSearcher.html#ae5a354f49008fa60d5f16264b843ea25">anima::NonLocalMeansPatchSearcher&lt; ImageType, DataImageType &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansTemporalImageFilter.html#aa8b15f6133ff814fa8e7ca446b16b99a">anima::NonLocalMeansTemporalImageFilter&lt; TInputImage &gt;</a>
 </li>
 <li>SetMeanThreshold()
 : <a class="el" href="classanima_1_1LowMemoryNLMeansPatientToGroupComparisonBridge.html#a30179fe83a8597e6646de57f1e5a5b9a">anima::LowMemoryNLMeansPatientToGroupComparisonBridge</a>
 , <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#a35bcfdb95d6483e30c63949e146606a2">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
+, <a class="el" href="classanima_1_1NLMeansVectorPatchSearcher.html#a6c445b3d8af470caae4daec6b56626ac">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;</a>
 </li>
 <li>SetMEstimateConvergenceThreshold()
 : <a class="el" href="classanima_1_1DenseSVFTransformAgregator.html#a2e91b1d424724234d8ef94b1b9fca4bd">anima::DenseSVFTransformAgregator&lt; NDimensions &gt;</a>
@@ -1225,6 +1244,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SetNeighborhoodHalfSize()
 : <a class="el" href="classanima_1_1DenseSVFTransformAgregator.html#a9e80952607a66be1a76c871a8389d49a">anima::DenseSVFTransformAgregator&lt; NDimensions &gt;</a>
 , <a class="el" href="classanima_1_1MEstimateSVFImageFilter.html#a8d2a3e3d6cea1e7d928e3f297685ef06">anima::MEstimateSVFImageFilter&lt; TScalarType, NDegreesOfFreedom, NDimensions &gt;</a>
+</li>
+<li>SetNoiseCovariance()
+: <a class="el" href="classanima_1_1NonLocalMeansPatchSearcher.html#af32e200f1dbfb73c8181b8908111490c">anima::NonLocalMeansPatchSearcher&lt; ImageType, DataImageType &gt;</a>
 </li>
 <li>SetNormalize()
 : <a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#aaadb4e5e16ce1ed428f0319b4dbe5144">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;</a>
@@ -1432,7 +1454,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SetOutputSpacing()
 : <a class="el" href="classanima_1_1OrientedModelBaseResampleImageFilter.html#a94181f0e14c15b9eb822f11a1edf4dda">anima::OrientedModelBaseResampleImageFilter&lt; TInputScalarType, Dimension, TInterpolatorPrecisionType &gt;</a>
-, <a class="el" href="classanima_1_1ResampleImageFilter.html#a009e33fdbbd948aca15618e29115957c">anima::ResampleImageFilter&lt; TInputImage, TOutputImage, TInterpolatorPrecisionType &gt;</a>
+, <a class="el" href="classanima_1_1ResampleImageFilter.html#abdc4455394fda91703d18a4771553897">anima::ResampleImageFilter&lt; TInputImage, TOutputImage, TInterpolatorPrecisionType &gt;</a>
 </li>
 <li>SetOutputStartIndex()
 : <a class="el" href="classanima_1_1ResampleImageFilter.html#a7350b6c24500749f10c7318d257bc442">anima::ResampleImageFilter&lt; TInputImage, TOutputImage, TInterpolatorPrecisionType &gt;</a>
@@ -1495,9 +1517,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#abf825e6ea67546181c32b3c53b622c02">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansImageFilter.html#a0199dcb86b21a865a7ba880119dc8053">anima::NonLocalMeansImageFilter&lt; TInputImage &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansTemporalImageFilter.html#aba124168fbdf2571f0a6e4da51626ed7">anima::NonLocalMeansTemporalImageFilter&lt; TInputImage &gt;</a>
+, <a class="el" href="classanima_1_1NonLocalPatchBaseSearcher.html#ac93add67b9ff2e42d866b1847e9e76fb">anima::NonLocalPatchBaseSearcher&lt; ImageType &gt;</a>
 </li>
 <li>SetPercentageKept()
-: <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a74a72f7fdf5cc4e9b5f31be7eca7af70">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
+: <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a49124b58ead5d1094743c01908492eb0">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalBlockMatchingBridge.html#ae895ea791fb979f45e42d6f2deab9928">anima::PyramidalBlockMatchingBridge&lt; ImageDimension &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalDenseSVFMatchingBridge.html#a851ebb3f28badddee130bae1a7ae3411">anima::PyramidalDenseSVFMatchingBridge&lt; ImageDimension &gt;</a>
 , <a class="el" href="classanima_1_1PyramidalDenseTensorSVFMatchingBridge.html#a38b91d3deac33f0447c4438836deec2f">anima::PyramidalDenseTensorSVFMatchingBridge&lt; ImageDimension &gt;</a>
@@ -1567,7 +1590,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classanima_1_1DTIEstimationImageFilter.html#a24721ba582b68f8197dc323441a299ec">anima::DTIEstimationImageFilter&lt; PixelScalarType &gt;</a>
 </li>
 <li>SetRequestedRegion()
-: <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a285785f2002660623090fbbaea172837">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
+: <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a45c2c9ac427a4369adf6db664d2b9a30">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
 </li>
 <li>SetResamplingThreshold()
 : <a class="el" href="classanima_1_1BaseProbabilisticTractographyImageFilter.html#a7787ebe2eead5dec7a15d04de1d5e2a2">anima::BaseProbabilisticTractographyImageFilter</a>
@@ -1606,7 +1629,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classanima_1_1PatientToGroupODFComparisonImageFilter.html#aa8e63478b8e6bee65079d155869d72f5">anima::PatientToGroupODFComparisonImageFilter&lt; PixelScalarType &gt;</a>
 </li>
 <li>SetScalarVarianceThreshold()
-: <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a6fa4581c944d614e40ab6bc3722b62fe">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
+: <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a212e684d09791c98c2cecb1588950673">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
 </li>
 <li>SetScaleIntensities()
 : <a class="el" href="classanima_1_1FastCorrelationImageToImageMetric.html#ac335a52aa7faae79b4583eceea13ddb1">anima::FastCorrelationImageToImageMetric&lt; TFixedImage, TMovingImage &gt;</a>
@@ -1673,6 +1696,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#a26ddeb2274d5522b2d5c4e855f62de13">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansImageFilter.html#ac8935a95af5af360d3193b2419eab0b0">anima::NonLocalMeansImageFilter&lt; TInputImage &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansTemporalImageFilter.html#ae9bd996d239c41b40a798605c44baf41">anima::NonLocalMeansTemporalImageFilter&lt; TInputImage &gt;</a>
+, <a class="el" href="classanima_1_1NonLocalPatchBaseSearcher.html#a1e464537005a58193f2d36433a63ee9a">anima::NonLocalPatchBaseSearcher&lt; ImageType &gt;</a>
 </li>
 <li>SetSeedMask()
 : <a class="el" href="classanima_1_1BaseProbabilisticTractographyImageFilter.html#abf23cb1c6bcec1498fcb4eab96fd7516">anima::BaseProbabilisticTractographyImageFilter</a>
@@ -1820,7 +1844,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classanima_1_1SimuBlochSPGRE.html#aec143238a2c39d5d03375bfb2e1c50f6">anima::SimuBlochSPGRE&lt; TImage &gt;</a>
 </li>
 <li>SetTensorVarianceThreshold()
-: <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a03128c5d6a7bf7c4e1d7a6e87b7ad9a1">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
+: <a class="el" href="classanima_1_1BlockMatchingInitializer.html#a204fd6c79e93add6766ae782185167b2">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;</a>
 </li>
 <li>SetTestFileName()
 : <a class="el" href="classanima_1_1LowMemoryNLMeansPatientToGroupComparisonBridge.html#a01bf1d87443641198e97d3e354704286">anima::LowMemoryNLMeansPatientToGroupComparisonBridge</a>
@@ -1980,13 +2004,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classanima_1_1PyramidalDistortionCorrectionBlockMatchingBridge.html#a0638224c926eb63e7cda7e0f5016221c">anima::PyramidalDistortionCorrectionBlockMatchingBridge&lt; ImageDimension &gt;</a>
 </li>
 <li>SetVarianceThreshold()
-: <a class="el" href="classanima_1_1FastCorrelationImageToImageMetric.html#a51aea04d50eaf00034a23d0b7e04bacc">anima::FastCorrelationImageToImageMetric&lt; TFixedImage, TMovingImage &gt;</a>
-, <a class="el" href="classanima_1_1LowMemoryNLMeansPatientToGroupComparisonBridge.html#a96ff76b5584b4c9557b9cfa9f96aa2f9">anima::LowMemoryNLMeansPatientToGroupComparisonBridge</a>
+: <a class="el" href="classanima_1_1LowMemoryNLMeansPatientToGroupComparisonBridge.html#a96ff76b5584b4c9557b9cfa9f96aa2f9">anima::LowMemoryNLMeansPatientToGroupComparisonBridge</a>
 , <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#a0e8d7f0c94f0fe6c31da7b9565ee8099">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
+, <a class="el" href="classanima_1_1NLMeansVectorPatchSearcher.html#aa81a53e1ddc4fd448fd8ae2eb48c42d7">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;</a>
 , <a class="el" href="classanima_1_1TensorGeneralizedCorrelationImageToImageMetric.html#a93a7a0bb3de0792b3e5ef3bea762e9a8">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;</a>
+</li>
+<li>SetVarImage()
+: <a class="el" href="classanima_1_1NonLocalMeansPatchSearcher.html#ad5374fc92f5e40971fd5ca5eae52190b">anima::NonLocalMeansPatchSearcher&lt; ImageType, DataImageType &gt;</a>
 </li>
 <li>SetVarMinThreshold()
 : <a class="el" href="classanima_1_1NonLocalMeansImageFilter.html#a1843f6588abcdee8a4fb5676a7fc69ef">anima::NonLocalMeansImageFilter&lt; TInputImage &gt;</a>
+, <a class="el" href="classanima_1_1NonLocalMeansPatchSearcher.html#ad43c12572636b8b1a1cf29fce1753281">anima::NonLocalMeansPatchSearcher&lt; ImageType, DataImageType &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansTemporalImageFilter.html#a14895996505556dfae526f16b5e5224a">anima::NonLocalMeansTemporalImageFilter&lt; TInputImage &gt;</a>
 </li>
 <li>SetVerbose()
@@ -2020,6 +2048,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#ae05a572fd8937e25a61c86aa44272ddf">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansImageFilter.html#a52deda0394423943050a7403ba883979">anima::NonLocalMeansImageFilter&lt; TInputImage &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansTemporalImageFilter.html#ab391c7241ea8a8ccf5bf2cd2f0998d53">anima::NonLocalMeansTemporalImageFilter&lt; TInputImage &gt;</a>
+, <a class="el" href="classanima_1_1NonLocalPatchBaseSearcher.html#aa89a962e7fe42f98f1580ae5b200f14f">anima::NonLocalPatchBaseSearcher&lt; ImageType &gt;</a>
 </li>
 <li>SigmaArrayType
 : <a class="el" href="classanima_1_1SmoothingRecursiveYvvGaussianImageFilter.html#a99cf5049627273740556484c9dde0c76">anima::SmoothingRecursiveYvvGaussianImageFilter&lt; TInputImage, TOutputImage &gt;</a>
@@ -2054,7 +2083,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structanima_1_1Graph_1_1arc.html#abef0cab3661b8b592757e9158882e625">anima::Graph&lt; captype, tcaptype, flowtype &gt;::arc</a>
 </li>
 <li>SizeType
-: <a class="el" href="classanima_1_1ResampleImageFilter.html#a1f02f1992b6d29cfc68a23dfce339d32">anima::ResampleImageFilter&lt; TInputImage, TOutputImage, TInterpolatorPrecisionType &gt;</a>
+: <a class="el" href="classanima_1_1NonLocalPatchBaseSearcher.html#ac4595513f4e9d8ea8309cdd154cca192">anima::NonLocalPatchBaseSearcher&lt; ImageType &gt;</a>
+, <a class="el" href="classanima_1_1ResampleImageFilter.html#a1f02f1992b6d29cfc68a23dfce339d32">anima::ResampleImageFilter&lt; TInputImage, TOutputImage, TInterpolatorPrecisionType &gt;</a>
 </li>
 <li>SkewVectorType
 : <a class="el" href="classanima_1_1SplitAffine3DTransform.html#a7afcd504ad12cd388007a7e2e0f7a837">anima::SplitAffine3DTransform&lt; TScalarType &gt;</a>
@@ -2089,7 +2119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classanima_1_1ResampleImageFilter.html#a217410ad20ee9d1e09040990b037c33c">anima::ResampleImageFilter&lt; TInputImage, TOutputImage, TInterpolatorPrecisionType &gt;</a>
 </li>
 <li>SphericalHarmonic()
-: <a class="el" href="classanima_1_1SphericalHarmonic.html#a56919ac678c549ad8145d5146e377942">anima::SphericalHarmonic</a>
+: <a class="el" href="classanima_1_1SphericalHarmonic.html#a165dfa5ccabddf3f4fa9b913e250ff35">anima::SphericalHarmonic</a>
 </li>
 <li>SplitAffine3DTransform()
 : <a class="el" href="classanima_1_1SplitAffine3DTransform.html#aec63313f251328d254e15ef85165af4c">anima::SplitAffine3DTransform&lt; TScalarType &gt;</a>
@@ -2191,8 +2221,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classanima_1_1NewuoaOptimizer.html#aa364cfaba272822d71288faf5b23636b">anima::NewuoaOptimizer</a>
 , <a class="el" href="classanima_1_1NLinksFilter.html#a96e1cde6e49c6c0cd8d8c80a4d7b9e80">anima::NLinksFilter&lt; TInput, TOutput &gt;</a>
 , <a class="el" href="classanima_1_1NLMeansPatientToGroupComparisonImageFilter.html#a07d33c2a17cf73bb62099ba9c9155e21">anima::NLMeansPatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;</a>
+, <a class="el" href="classanima_1_1NLMeansVectorPatchSearcher.html#a411ec23b034fd9e5f58b2bea4f86098a">anima::NLMeansVectorPatchSearcher&lt; ImageScalarType, DataImageType &gt;</a>
 , <a class="el" href="classanima_1_1NonCentralChiNoiseGeneratorImageFilter.html#a3895932805e64aba3fea91a34a8122f0">anima::NonCentralChiNoiseGeneratorImageFilter&lt; Dimension &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansImageFilter.html#a11db68cdde7043d39515b78a9457f338">anima::NonLocalMeansImageFilter&lt; TInputImage &gt;</a>
+, <a class="el" href="classanima_1_1NonLocalMeansPatchSearcher.html#a8510dfcbb4f618877a7601b98fed07c7">anima::NonLocalMeansPatchSearcher&lt; ImageType, DataImageType &gt;</a>
 , <a class="el" href="classanima_1_1NonLocalMeansTemporalImageFilter.html#a635480da295604f7e77693a8ebd788b6">anima::NonLocalMeansTemporalImageFilter&lt; TInputImage &gt;</a>
 , <a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#a535f2055c375a27dfa3deeb2c9ae8f8c">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;</a>
 , <a class="el" href="classanima_1_1ODFMaximaCostFunction.html#a52bdd5e0aeb6a13abd49b9808da213f2">anima::ODFMaximaCostFunction</a>
@@ -2253,7 +2285,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classanima_1_1SymmetricBMRegistrationMethod.html#a425df904b93ff6d105fe93af5a629c4a">anima::SymmetricBMRegistrationMethod&lt; TInputImageType &gt;</a>
 </li>
 <li>SymmetryConstrainedTransform()
-: <a class="el" href="classanima_1_1SymmetryConstrainedTransform.html#af93a0dc76e8643e7de19c0bab88e31d7">anima::SymmetryConstrainedTransform&lt; TScalarType &gt;</a>
+: <a class="el" href="classanima_1_1SymmetryConstrainedTransform.html#a1976febab24b787c36ab0f7cba1932c5">anima::SymmetryConstrainedTransform&lt; TScalarType &gt;</a>
 </li>
 <li>SymmetryPlaneTransform()
 : <a class="el" href="classanima_1_1SymmetryPlaneTransform.html#a109a191a842aebcec892a1edb8c82bc9">anima::SymmetryPlaneTransform&lt; TScalarType &gt;</a>
@@ -2262,7 +2294,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 28 2015 15:08:14 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 22 2015 20:39:08 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

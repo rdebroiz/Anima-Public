@@ -16,10 +16,12 @@ var searchData=
   ['initializesampledirections',['InitializeSampleDirections',['../namespaceanima.html#ac106a4b87ec3d4e653ee7f8b714091d6',1,'anima']]],
   ['initializezeropixel',['InitializeZeroPixel',['../classanima_1_1MaskedImageToImageFilter.html#a2c42b7db2c72b65640cf166fd0b3b6e6',1,'anima::MaskedImageToImageFilter::InitializeZeroPixel(TOutputImage *image, itk::VariableLengthVector&lt; ScalarRealType &gt; &amp;zeroPixel)'],['../classanima_1_1MaskedImageToImageFilter.html#a5e3176cb8410850cf756ad140d2f8866',1,'anima::MaskedImageToImageFilter::InitializeZeroPixel(TOutputImage *, PixelType &amp;zeroPixel)']]],
   ['initresamplefilters',['InitResampleFilters',['../classanima_1_1Graph3DFilter.html#a3f369e2b4536ec12941a033919eb6071',1,'anima::Graph3DFilter']]],
+  ['internalclone',['InternalClone',['../classanima_1_1ResampleImageFilter.html#a1f8568af957764321684127293eedc86',1,'anima::ResampleImageFilter']]],
   ['internallogger',['InternalLogger',['../classanima_1_1MatrixLoggerFilter.html#a83eb8884463964ef53e6dade6b73b384',1,'anima::MatrixLoggerFilter']]],
   ['inversecubicinterpolator',['InverseCubicInterpolator',['../namespaceanima.html#a695935eb0d4deccd604bc6500f18548f',1,'anima']]],
   ['isinside',['isInside',['../classanima_1_1NLinksFilter.html#a17a865b88b66e55707dcf766b3f9d0d0',1,'anima::NLinksFilter']]],
   ['isinsidebuffer',['IsInsideBuffer',['../classanima_1_1FasterLinearInterpolateImageFunction.html#a2160794ccd64c6a0525dea53b4631042',1,'anima::FasterLinearInterpolateImageFunction::IsInsideBuffer()'],['../classanima_1_1VectorModelLinearInterpolateImageFunction.html#ae42df213d9727f5dea762be3b24cc89b',1,'anima::VectorModelLinearInterpolateImageFunction::IsInsideBuffer()']]],
   ['iszero',['isZero',['../classanima_1_1GeneralizedFAImageFilter.html#a6a81a21ee3df8f1134f6f9fae0c5bfd1',1,'anima::GeneralizedFAImageFilter::isZero()'],['../classanima_1_1VectorModelLinearInterpolateImageFunction.html#a6391c12d9f8a6a0c849037bbd8f4203e',1,'anima::VectorModelLinearInterpolateImageFunction::isZero()'],['../classanima_1_1OrientedModelBaseResampleImageFilter.html#ac05e040ebe38be052866f3cd34d18763',1,'anima::OrientedModelBaseResampleImageFilter::isZero()']]],
+  ['itkgetobjectmacro',['itkGetObjectMacro',['../classanima_1_1NonLocalPatchBaseSearcher.html#a3157ef27b2f4df09da5d8528d7a29fe1',1,'anima::NonLocalPatchBaseSearcher']]],
   ['itklegacymacro',['itkLegacyMacro',['../classanima_1_1ResampleImageFilter.html#af7fc12307300f747b279b2e978d214af',1,'anima::ResampleImageFilter']]]
 ];

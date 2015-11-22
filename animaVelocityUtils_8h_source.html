@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_c0a452dd14f65e258448c664525add5d.html">Anima-pub-src</a></li><li class="navelem"><a class="el" href="dir_9421c4146b03c44e6336f18fe8a53217.html">Anima</a></li><li class="navelem"><a class="el" href="dir_c792feba0dce4fca5848f9cec2438d2f.html">registration</a></li><li class="navelem"><a class="el" href="dir_973ce472ea4961037b6df2c12b4f1034.html">common</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_83193e57fe923362c47cf9688424d9aa.html">Anima</a></li><li class="navelem"><a class="el" href="dir_15cb7d15c015fb038ac74d52b3723b6b.html">registration</a></li><li class="navelem"><a class="el" href="dir_004dea2ee4150168d84504b0a4b31d28.html">common</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -99,36 +99,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;itkStationaryVelocityFieldTransform.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;rpiDisplacementFieldTransform.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>anima</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ScalarType, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> NDimensions&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceanima.html#a4793ea3b2bba15c52366d7cb4dbbf227">composeSVF</a>(itk::StationaryVelocityFieldTransform &lt;ScalarType,NDimensions&gt; *baseTrsf,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                itk::StationaryVelocityFieldTransform &lt;ScalarType,NDimensions&gt; *addonTrsf);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ScalarType, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> NDimensions&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceanima.html#a3bea3f085f8a59d580435c0850b77b60">GetSVFExponential</a>(itk::StationaryVelocityFieldTransform &lt;ScalarType,NDimensions&gt; *baseTrsf,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                       rpi::DisplacementFieldTransform &lt;ScalarType,NDimensions&gt; *resultTransform,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                       <span class="keywordtype">bool</span> invert);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ScalarType, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> NDimensions&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceanima.html#ae431bd39edc419b04e3639826516e0d6">composeDistortionCorrections</a>(<span class="keyword">typename</span> rpi::DisplacementFieldTransform &lt;ScalarType,NDimensions&gt;::Pointer &amp;baseTrsf,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                  <span class="keyword">typename</span> rpi::DisplacementFieldTransform &lt;ScalarType,NDimensions&gt;::Pointer &amp;positiveAddOn,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                  <span class="keyword">typename</span> rpi::DisplacementFieldTransform &lt;ScalarType,NDimensions&gt;::Pointer &amp;negativeAddOn,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numThreads);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// end of namespace anima</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;itkMultiThreader.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>anima</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ScalarType, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> NDimensions&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceanima.html#a3c037415e4ccbab2be239b5457c6db83">composeSVF</a>(itk::StationaryVelocityFieldTransform &lt;ScalarType,NDimensions&gt; *baseTrsf,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                itk::StationaryVelocityFieldTransform &lt;ScalarType,NDimensions&gt; *addonTrsf,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numThreads = itk::MultiThreader::GetGlobalDefaultNumberOfThreads());</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ScalarType, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> NDimensions&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceanima.html#a3bea3f085f8a59d580435c0850b77b60">GetSVFExponential</a>(itk::StationaryVelocityFieldTransform &lt;ScalarType,NDimensions&gt; *baseTrsf,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                       rpi::DisplacementFieldTransform &lt;ScalarType,NDimensions&gt; *resultTransform,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                       <span class="keywordtype">bool</span> invert);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ScalarType, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> NDimensions&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceanima.html#a5ead5ac7f2df4ae2f1e005fa0588e9c0">composeDistortionCorrections</a>(<span class="keyword">typename</span> rpi::DisplacementFieldTransform &lt;ScalarType,NDimensions&gt;::Pointer &amp;baseTrsf,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                  <span class="keyword">typename</span> rpi::DisplacementFieldTransform &lt;ScalarType,NDimensions&gt;::Pointer &amp;positiveAddOn,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                  <span class="keyword">typename</span> rpi::DisplacementFieldTransform &lt;ScalarType,NDimensions&gt;::Pointer &amp;negativeAddOn,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numThreads =  itk::MultiThreader::GetGlobalDefaultNumberOfThreads());</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="animaVelocityUtils_8hxx.html">animaVelocityUtils.hxx</a>&quot;</span></div>
-<div class="ttc" id="namespaceanima_html_a4793ea3b2bba15c52366d7cb4dbbf227"><div class="ttname"><a href="namespaceanima.html#a4793ea3b2bba15c52366d7cb4dbbf227">anima::composeSVF</a></div><div class="ttdeci">void composeSVF(itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *baseTrsf, itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *addonTrsf)</div><div class="ttdef"><b>Definition:</b> <a href="animaVelocityUtils_8hxx_source.html#l00013">animaVelocityUtils.hxx:13</a></div></div>
-<div class="ttc" id="namespaceanima_html_a3bea3f085f8a59d580435c0850b77b60"><div class="ttname"><a href="namespaceanima.html#a3bea3f085f8a59d580435c0850b77b60">anima::GetSVFExponential</a></div><div class="ttdeci">void GetSVFExponential(itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *baseTrsf, rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt; *resultTransform, bool invert)</div><div class="ttdef"><b>Definition:</b> <a href="animaVelocityUtils_8hxx_source.html#l00041">animaVelocityUtils.hxx:41</a></div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <span class="comment">// end of namespace anima</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="animaVelocityUtils_8hxx.html">animaVelocityUtils.hxx</a>&quot;</span></div>
+<div class="ttc" id="namespaceanima_html_a3c037415e4ccbab2be239b5457c6db83"><div class="ttname"><a href="namespaceanima.html#a3c037415e4ccbab2be239b5457c6db83">anima::composeSVF</a></div><div class="ttdeci">void composeSVF(itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *baseTrsf, itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *addonTrsf, unsigned int numThreads=itk::MultiThreader::GetGlobalDefaultNumberOfThreads())</div><div class="ttdef"><b>Definition:</b> <a href="animaVelocityUtils_8hxx_source.html#l00013">animaVelocityUtils.hxx:13</a></div></div>
+<div class="ttc" id="namespaceanima_html_a5ead5ac7f2df4ae2f1e005fa0588e9c0"><div class="ttname"><a href="namespaceanima.html#a5ead5ac7f2df4ae2f1e005fa0588e9c0">anima::composeDistortionCorrections</a></div><div class="ttdeci">void composeDistortionCorrections(typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;baseTrsf, typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;positiveAddOn, typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;negativeAddOn, unsigned int numThreads=itk::MultiThreader::GetGlobalDefaultNumberOfThreads())</div><div class="ttdef"><b>Definition:</b> <a href="animaVelocityUtils_8hxx_source.html#l00064">animaVelocityUtils.hxx:64</a></div></div>
+<div class="ttc" id="namespaceanima_html_a3bea3f085f8a59d580435c0850b77b60"><div class="ttname"><a href="namespaceanima.html#a3bea3f085f8a59d580435c0850b77b60">anima::GetSVFExponential</a></div><div class="ttdeci">void GetSVFExponential(itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *baseTrsf, rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt; *resultTransform, bool invert)</div><div class="ttdef"><b>Definition:</b> <a href="animaVelocityUtils_8hxx_source.html#l00045">animaVelocityUtils.hxx:45</a></div></div>
 <div class="ttc" id="animaVelocityUtils_8hxx_html"><div class="ttname"><a href="animaVelocityUtils_8hxx.html">animaVelocityUtils.hxx</a></div></div>
-<div class="ttc" id="namespaceanima_html_ae431bd39edc419b04e3639826516e0d6"><div class="ttname"><a href="namespaceanima.html#ae431bd39edc419b04e3639826516e0d6">anima::composeDistortionCorrections</a></div><div class="ttdeci">void composeDistortionCorrections(typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;baseTrsf, typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;positiveAddOn, typename rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt;::Pointer &amp;negativeAddOn, unsigned int numThreads)</div><div class="ttdef"><b>Definition:</b> <a href="animaVelocityUtils_8hxx_source.html#l00060">animaVelocityUtils.hxx:60</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 28 2015 15:08:13 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 22 2015 20:39:06 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

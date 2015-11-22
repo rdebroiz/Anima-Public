@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_c0a452dd14f65e258448c664525add5d.html">Anima-pub-src</a></li><li class="navelem"><a class="el" href="dir_9421c4146b03c44e6336f18fe8a53217.html">Anima</a></li><li class="navelem"><a class="el" href="dir_ab4f6cf2afb71d412dab7212f46f970b.html">diffusion</a></li><li class="navelem"><a class="el" href="dir_7f610fd1f25d1ad421394b0797c460a1.html">common</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_83193e57fe923362c47cf9688424d9aa.html">Anima</a></li><li class="navelem"><a class="el" href="dir_183a7a8d2d0d28eac948c10d98da4325.html">diffusion</a></li><li class="navelem"><a class="el" href="dir_636ca5220742e74c889570ff7399de56.html">common</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -241,97 +241,97 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">if</span> (gradFile.eof())</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="keywordflow">throw</span> itk::ExceptionObject(__FILE__, __LINE__,<span class="stringliteral">&quot;BVec file is missing data&quot;</span>,ITK_LOCATION);</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordtype">char</span> tmpStr[8192];</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            tmpStr[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordflow">while</span>((strcmp(tmpStr,<span class="stringliteral">&quot;&quot;</span>) == 0)&amp;&amp;(!gradFile.eof()))</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                gradFile.getline(tmpStr,8192);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            std::string workStr(tmpStr);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            boost::algorithm::trim_right(workStr);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            std::istringstream iss(workStr);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            std::string shortStr;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">do</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                iss &gt;&gt; shortStr;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                trVecs[i].push_back(boost::lexical_cast&lt;BValueScalarType&gt; (shortStr));</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keywordflow">while</span> (!iss.eof());</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            std::string workStr;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                std::getline(gradFile,workStr);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            } <span class="keywordflow">while</span>((workStr == <span class="stringliteral">&quot;&quot;</span>)&amp;&amp;(!gradFile.eof()));</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            boost::algorithm::trim_right(workStr);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            std::istringstream iss(workStr);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            std::string shortStr;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                iss &gt;&gt; shortStr;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                trVecs[i].push_back(boost::lexical_cast&lt;BValueScalarType&gt; (shortStr));</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">while</span> (!iss.eof());</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        m_TotalNumberOfDirections = trVecs[0].size();</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        m_TotalNumberOfDirections = trVecs[0].size();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        m_Gradients.resize(m_TotalNumberOfDirections);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0;i &lt; m_TotalNumberOfDirections;++i)</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            this-&gt;InitializeEmptyGradient(m_Gradients[i]);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0;j &lt; 3;++j)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                m_Gradients[i][j] = trVecs[j][i];</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> GradientType, <span class="keyword">class</span> BValueScalarType&gt;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    GradientFileReader&lt;GradientType,BValueScalarType&gt;::</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    ReadGradientsFromTextFile()</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        std::ifstream gradFile(m_GradientFileName.c_str());</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        m_TotalNumberOfDirections = 0;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">if</span> (!gradFile.is_open())</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordflow">throw</span> itk::ExceptionObject(__FILE__, __LINE__,<span class="stringliteral">&quot;Could not open gradient file as a text file&quot;</span>,ITK_LOCATION);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        GradientType gradTmp;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        this-&gt;InitializeEmptyGradient(gradTmp);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        m_Gradients.clear();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">while</span> (!gradFile.eof())</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordtype">char</span> tmpStr[2048];</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            gradFile.getline(tmpStr,2048);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordflow">if</span> (strcmp(tmpStr,<span class="stringliteral">&quot;&quot;</span>) == 0)</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordtype">float</span> a0, a1, a2;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            sscanf(tmpStr,<span class="stringliteral">&quot;%f %f %f&quot;</span>,&amp;a0,&amp;a1,&amp;a2);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            gradTmp[0] = a0;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            gradTmp[1] = a1;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            gradTmp[2] = a2;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            m_Gradients.push_back(gradTmp);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        m_Gradients.resize(m_TotalNumberOfDirections);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0;i &lt; m_TotalNumberOfDirections;++i)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            this-&gt;InitializeEmptyGradient(m_Gradients[i]);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0;j &lt; 3;++j)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                m_Gradients[i][j] = trVecs[j][i];</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> GradientType, <span class="keyword">class</span> BValueScalarType&gt;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    GradientFileReader&lt;GradientType,BValueScalarType&gt;::</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    ReadGradientsFromTextFile()</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        std::ifstream gradFile(m_GradientFileName.c_str());</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        m_TotalNumberOfDirections = 0;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">if</span> (!gradFile.is_open())</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">throw</span> itk::ExceptionObject(__FILE__, __LINE__,<span class="stringliteral">&quot;Could not open gradient file as a text file&quot;</span>,ITK_LOCATION);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        GradientType gradTmp;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        this-&gt;InitializeEmptyGradient(gradTmp);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        m_Gradients.clear();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">while</span> (!gradFile.eof())</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordtype">char</span> tmpStr[2048];</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            gradFile.getline(tmpStr,2048);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keywordflow">if</span> (strcmp(tmpStr,<span class="stringliteral">&quot;&quot;</span>) == 0)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="keywordtype">float</span> a0, a1, a2;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            sscanf(tmpStr,<span class="stringliteral">&quot;%f %f %f&quot;</span>,&amp;a0,&amp;a1,&amp;a2);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            gradTmp[0] = a0;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            gradTmp[1] = a1;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            gradTmp[2] = a2;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            m_Gradients.push_back(gradTmp);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        m_TotalNumberOfDirections = m_Gradients.size();</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        m_TotalNumberOfDirections = m_Gradients.size();</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        gradFile.close();</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> GradientType, <span class="keyword">class</span> BValueScalarType&gt;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    GradientFileReader&lt;GradientType,BValueScalarType&gt;::</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    ReadBValues()</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        m_BValues.resize(m_TotalNumberOfDirections);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        gradFile.close();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> GradientType, <span class="keyword">class</span> BValueScalarType&gt;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    GradientFileReader&lt;GradientType,BValueScalarType&gt;::</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    ReadBValues()</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        m_BValues.resize(m_TotalNumberOfDirections);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        std::ifstream bvalFile(m_BValueBaseString.c_str());</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        std::ifstream bvalFile(m_BValueBaseString.c_str());</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span> (!bvalFile.is_open())</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0;i &lt; m_TotalNumberOfDirections;++i)</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                m_BValues[i] = boost::lexical_cast&lt;BValueScalarType&gt;(m_BValueBaseString);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">if</span> (boost::algorithm::ends_with(m_BValueBaseString, <span class="stringliteral">&quot;bvals&quot;</span>) || boost::algorithm::ends_with(m_BValueBaseString, <span class="stringliteral">&quot;bval&quot;</span>)) <span class="comment">// bval file</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordtype">char</span> tmpStr[8192];</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            bvalFile.getline(tmpStr,8192);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            std::string workStr(tmpStr);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">if</span> (!bvalFile.is_open())</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0;i &lt; m_TotalNumberOfDirections;++i)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                m_BValues[i] = boost::lexical_cast&lt;BValueScalarType&gt;(m_BValueBaseString);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">if</span> (boost::algorithm::ends_with(m_BValueBaseString, <span class="stringliteral">&quot;bvals&quot;</span>) || boost::algorithm::ends_with(m_BValueBaseString, <span class="stringliteral">&quot;bval&quot;</span>)) <span class="comment">// bval file</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            std::string workStr;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                std::getline(bvalFile,workStr);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            } <span class="keywordflow">while</span>((workStr == <span class="stringliteral">&quot;&quot;</span>)&amp;&amp;(!bvalFile.eof()));</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            boost::algorithm::trim_right(workStr);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            std::istringstream iss(workStr);</div>
@@ -381,7 +381,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 28 2015 15:08:12 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 22 2015 20:39:05 for ANIMA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

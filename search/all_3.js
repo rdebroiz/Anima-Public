@@ -1,6 +1,7 @@
 var searchData=
 [
   ['dataholdertype',['DataHolderType',['../classanima_1_1KMeansFilter.html#a79bf260d61f8b41c5ed2ff2b6fca2699',1,'anima::KMeansFilter']]],
+  ['dataimagepointer',['DataImagePointer',['../classanima_1_1NonLocalMeansPatchSearcher.html#ad41076a1a680867371e38a396e00cbd6',1,'anima::NonLocalMeansPatchSearcher::DataImagePointer()'],['../classanima_1_1NLMeansVectorPatchSearcher.html#a046a03fa457b3c2c1da49ed8ffd93756',1,'anima::NLMeansVectorPatchSearcher::DataImagePointer()']]],
   ['dataobjectpointerarraysizetype',['DataObjectPointerArraySizeType',['../classanima_1_1BaseBMRegistrationMethod.html#a86d84caa958e7695ea49a80cba7c3f45',1,'anima::BaseBMRegistrationMethod']]],
   ['dblock',['DBlock',['../classanima_1_1DBlock.html#aa05c052896ef9bdd00fe4c0edbd788f5',1,'anima::DBlock']]],
   ['dblock',['DBlock',['../classanima_1_1DBlock.html',1,'anima']]],
@@ -36,17 +37,17 @@ var searchData=
   ['distortioncorrectionimagefilter',['DistortionCorrectionImageFilter',['../classanima_1_1DistortionCorrectionImageFilter.html',1,'anima']]],
   ['doublevariablesizematrixtype',['DoubleVariableSizeMatrixType',['../classanima_1_1AtlasInitializer.html#a051dd059766c9fe45e1f110a72b5c002',1,'anima::AtlasInitializer::DoubleVariableSizeMatrixType()'],['../classanima_1_1ImageClassifierFilter.html#a8eddd83365827af42cc804173ddc7886',1,'anima::ImageClassifierFilter::DoubleVariableSizeMatrixType()'],['../classanima_1_1TLinksFilter.html#ab2b0727507e016bc9da5959316fbcc5c',1,'anima::TLinksFilter::DoubleVariableSizeMatrixType()']]],
   ['doublevariablesizematrixvnltype',['DoubleVariableSizeMatrixVnlType',['../classanima_1_1GaussianREMEstimator.html#a3b22c515b6cde5d24469f0bf852dc265',1,'anima::GaussianREMEstimator']]],
-  ['dtiestimationimagefilter',['DTIEstimationImageFilter',['../classanima_1_1DTIEstimationImageFilter.html',1,'anima']]],
   ['dtiestimationimagefilter',['DTIEstimationImageFilter',['../classanima_1_1DTIEstimationImageFilter.html#a79b18ebcbc0722df19a5c060cb49e6a1',1,'anima::DTIEstimationImageFilter']]],
-  ['dtiextrapolateimagefilter',['DTIExtrapolateImageFilter',['../classanima_1_1DTIExtrapolateImageFilter.html#a15c38d14e9276e7ac69d2f321632c77a',1,'anima::DTIExtrapolateImageFilter']]],
+  ['dtiestimationimagefilter',['DTIEstimationImageFilter',['../classanima_1_1DTIEstimationImageFilter.html',1,'anima']]],
   ['dtiextrapolateimagefilter',['DTIExtrapolateImageFilter',['../classanima_1_1DTIExtrapolateImageFilter.html',1,'anima']]],
+  ['dtiextrapolateimagefilter',['DTIExtrapolateImageFilter',['../classanima_1_1DTIExtrapolateImageFilter.html#a15c38d14e9276e7ac69d2f321632c77a',1,'anima::DTIExtrapolateImageFilter']]],
   ['dtiimagetype',['DTIImageType',['../classanima_1_1DTIEstimationImageFilter.html#a1b72bc769f5f6be5059f2fe98e6f9cb1',1,'anima::DTIEstimationImageFilter::DTIImageType()'],['../classanima_1_1DTIExtrapolateImageFilter.html#ac0366387953a80533436dd97114085ca',1,'anima::DTIExtrapolateImageFilter::DTIImageType()']]],
   ['dtiinterpolatorpointer',['DTIInterpolatorPointer',['../classanima_1_1dtiTractographyImageFilter.html#a9b111f3f4dc55bc0bab436b3261df993',1,'anima::dtiTractographyImageFilter']]],
   ['dtiinterpolatortype',['DTIInterpolatorType',['../classanima_1_1dtiTractographyImageFilter.html#a387d694e856ce0b500d5543f7698dc20',1,'anima::dtiTractographyImageFilter']]],
   ['dtiprobabilistictractographyimagefilter',['DTIProbabilisticTractographyImageFilter',['../classanima_1_1DTIProbabilisticTractographyImageFilter.html',1,'anima']]],
   ['dtiprobabilistictractographyimagefilter',['DTIProbabilisticTractographyImageFilter',['../classanima_1_1DTIProbabilisticTractographyImageFilter.html#ae51d9e7cd6b116f24b65534273592403',1,'anima::DTIProbabilisticTractographyImageFilter']]],
-  ['dtiscalarmapsimagefilter',['DTIScalarMapsImageFilter',['../classanima_1_1DTIScalarMapsImageFilter.html#a8fa50082957eebeafbc7117f8f85e7d0',1,'anima::DTIScalarMapsImageFilter']]],
   ['dtiscalarmapsimagefilter',['DTIScalarMapsImageFilter',['../classanima_1_1DTIScalarMapsImageFilter.html',1,'anima']]],
+  ['dtiscalarmapsimagefilter',['DTIScalarMapsImageFilter',['../classanima_1_1DTIScalarMapsImageFilter.html#a8fa50082957eebeafbc7117f8f85e7d0',1,'anima::DTIScalarMapsImageFilter']]],
   ['dtitractographyimagefilter',['dtiTractographyImageFilter',['../classanima_1_1dtiTractographyImageFilter.html#a9ba696565f36fdb57af0b2576d85426e',1,'anima::dtiTractographyImageFilter']]],
   ['dtitractographyimagefilter',['dtiTractographyImageFilter',['../classanima_1_1dtiTractographyImageFilter.html',1,'anima']]],
   ['dwiinterpolatorpointervectortype',['DWIInterpolatorPointerVectorType',['../classanima_1_1BaseProbabilisticTractographyImageFilter.html#ad069b6657ae581d623cd4b5a688ab96f',1,'anima::BaseProbabilisticTractographyImageFilter']]]
