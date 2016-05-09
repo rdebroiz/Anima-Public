@@ -25,10 +25,11 @@ add_executable(${PROJECT_NAME}
 ## #############################################################################
 
 target_link_libraries(${PROJECT_NAME}
-  AnimaOptimizers
   ${ITKIO_LIBRARIES}
+  ${ITK_TRANSFORM_LIBRARIES}
   ITKOptimizers
   ITKStatistics
+  AnimaOptimizers
   )
 
 ## #############################################################################

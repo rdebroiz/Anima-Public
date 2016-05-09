@@ -22,6 +22,7 @@ add_library(${PROJECT_NAME}
 ## #############################################################################
 
 target_link_libraries(${PROJECT_NAME}
+  ${ITK_TRANSFORM_LIBRARIES}
   ITKCommon
   ITKIOCSV
   )

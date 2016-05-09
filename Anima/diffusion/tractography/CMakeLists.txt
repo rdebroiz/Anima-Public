@@ -26,6 +26,7 @@ add_library(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
   ${ITKIO_LIBRARIES}
+  ${ITK_TRANSFORM_LIBRARIES}
   AnimaOptimizers
   AnimaSHTools
   vtkIOXML

@@ -3,6 +3,8 @@
 #include <animaPyramidalDistortionCorrectionBlockMatchingBridge.h>
 #include <animaReadWriteFunctions.h>
 
+#include <itkTransformBase.h>
+
 #include <itkTimeProbe.h>
 
 int main(int argc, const char** argv)
