@@ -24,7 +24,12 @@ if (UNIX AND NOT BUILD_SHARED_LIBS AND "${CMAKE_SYSTEM_PROCESSOR}" MATCHES 64)
   set (cxx_flags "${cxx_flags} -fPIC")
 endif()
 
+if (CMAKE_MAKE_PROGRAM)
+  set(cmake_make_program "-DCMAKE_MAKE_PROGRAM:FILEPATH=${CMAKE_MAKE_PROGRAM}")
+endif()
+
 set(common_cache_args
+   ${cmake_make_program}
   -DCMAKE_C_FLAGS:STRING=${c_flags}
   -DCMAKE_CXX_FLAGS:STRING=${cxx_flags}
   -DCMAKE_BUILD_TYPE:STRING=${CMAKE_BUILD_TYPE}
@@ -39,3 +44,4 @@ if (CMAKE_EXTRA_GENERATOR)
 else()
   set(cmake_gen "${CMAKE_GENERATOR}")
 endif()
+
