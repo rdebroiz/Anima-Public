@@ -83,6 +83,7 @@ switch (imageIO->GetNumberOfDimensions())\
   * args...         -> A list of arguments to pass to the function
   */
 #define ANIMA_CHECK_IF_COMPONENTS_ARE_VECTORS(imageIO, ComponentType, Dimension, function, ...) \
+std::cout << imageIO->GetNumberOfComponents() << std::endl;\
 switch (imageIO->GetNumberOfComponents())\
 {\
 case 0:\
